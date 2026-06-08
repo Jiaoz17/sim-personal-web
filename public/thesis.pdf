@@ -1,0 +1,2531 @@
+
+
+Rationing the Interconnection Queue: 
+Governing Uncertainty under Reliability Urgency 
+by 
+Jiao Zhao 
+ 
+Bachelor of Architecture 
+Tongji University, 2022 
+ 
+Submitted to the Department of Urban Studies and Planning in partial fulfillment of 
+the requirements for the degree(s) of 
+MASTER IN CITY PLANNING 
+at the 
+MASSACHUSETTS INSTITUTE OF TECHNOLOGY 
+MAY 2026 
+© 2026 Jiao Zhao. All rights reserved 
+The author hereby grants to MIT a nonexclusive, worldwide, irrevocable, royalty-free 
+license to exercise any and all rights under copyright, including to reproduce, 
+preserve, distribute and publicly display copies of the thesis, or release the thesis 
+under an open-access license. 
+Authored by:   Jiao Zhao 
+ Department of Urban Studies and Planning 
+ May 15, 2026 
+Certified by:  David Hsu 
+ Associate Professor of Urban and Environmental Planning 
+ Department of Urban Studies and Planning, Thesis supervisor 
+Accepted by:   J. Phillip Thompson 
+ Professor of Political Science and Urban Planning 
+ Department of Urban Studies and Planning, MCP Committee Chair 
+
+ 2 
+Rationing the Interconnection Queue: 
+Governing Uncertainty under Reliability Urgency 
+by 
+Jiao Zhao 
+Submitted to the Department of Urban Studies and Planning on May 15, 2026 in 
+Partial Fulfillment of the Requirements for the Degree of Master in City Planning 
+ 
+ABSTRACT 
+Interconnection queues, managed by regional grid operators, determine how 
+generators connect to the electric transmission grid. Over the past decade, these 
+queues have become increasingly backlogged. As projected load growth and resource 
+retirements intensified reliability concerns, grid operators began proposing queue-
+rationing mechanisms to prioritize certain projects outside the standard 
+interconnection process. This thesis examines two such mechanisms, approved by the 
+Federal Energy Regulatory Commission in 2025 after contested proceedings: PJM’s 
+one-time, score-based Reliability Resource Initiative and MISO’s three-year Expedited 
+Resource Adequacy Study. It asks: when interconnection policymaking responds to 
+reliability urgency, what uncertainties emerge, and how are they understood and 
+managed? 
+Drawing on docket documents, interviews, and queue data, this thesis shows that 
+reliability urgency narrowed how uncertainty was managed. Docket analysis finds that 
+formal regulatory contestation centered on uncertainties about reliability forecasts, 
+cost shifting, and the ability of selection criteria to identify projects likely to deliver 
+reliability benefits. Although these uncertainties reflected long-standing problems in 
+interconnection policymaking, they were addressed under compressed timelines 
+through substantial deference to RTO expertise. Interviews show that the formal 
+debate left other uncertainties outside the regulatory frame, including the scope of 
+reliability needs, the precedent set by repeated procedural departures, and the 
+environmental consequences of reliability-driven project selection. Queue 
+composition analysis further shows that rationing translated reliability urgency into 
+queues distinct from the standard process, with disproportionate shares of gas 
+resources and substantial concentrations of data-center-driven and utility-led 
+projects. 
+Taken together, these findings suggest that the short-term reliability concept used to 
+justify queue rationing is too narrow to govern interconnection amid energy-
+transition uncertainty. The thesis argues for a broader approach to reliability 
+governance: one that clarifies the public-interest scope of reliability, embeds 
+reliability alongside affordability and sustainability, and creates more collective 
+mechanisms for managing uncertainty beyond technocratic institutions. 
+ 
+Thesis supervisor: David Hsu 
+Title: Associate Professor of Urban and Environmental Planning 
+  
+
+ 3 
+Table of content 
+Introduction ..................................................................................................................................   6 
+Theory .......................................................................................................................................... 10 
+Background ................................................................................................................................. 14 
+Data and Method ........................................................................................................................ 22 
+Docket: contested uncertainties within the federal regulatory venue ............................. 25 
+Uncertainty over reliability needs ....................................................................................... 25 
+Uncertainty over cost shifting ............................................................................................. 29 
+Uncertainty over viability criteria ....................................................................................... 31 
+Dissolving uncertainties for decision-making ..................................................................   34 
+Interview: uncertainties beyond the formal debate ............................................................ 39 
+Hyperscalers as uncertain reliability need ........................................................................ 39 
+Recurring stopgaps as uncertain harm ............................................................................... 40 
+Environmental consequences as uncertain outcomes ..................................................... 42 
+Rationed queues: uncertainties reflected in queue composition ...................................... 43 
+Discussion ................................................................................................................................... 49 
+Bibliography ............................................................................................................................... 51 
+Appendix ..................................................................................................................................... 59 
+ 
+ 
+  
+
+ 4 
+List of Tables:  
+Table 1: Interview sample ......................................................................................................... 24 
+Table 2: Projects by top 5 parent companies of interconnection customers in ERAS 
+queue ............................................................................................................................................ 46 
+Table 3: Utility projects in ERAS queue .................................................................................. 47 
+ 
+  
+
+ 5 
+List of Figures:  
+Figure 1: Queued capacity fuel mix in PJM, standard queue (2010–2023) vs. RRI (2025) 44 
+Figure 2: Queued projects by fuel mix in selected vs. unselected RRI process ............... 45 
+Figure 3: Queued capacity fuel mix in MISO, standard queue (2010–2024) vs. ERAS 
+(2025) ............................................................................................................................................ 46
+ 
+Figure 4: ERAS queued capacity by state ............................................................................... 48 
+ 
+ 
+  
+
+ 6 
+Introduction  
+Interconnection became a policy question when market restructuring separated 
+generation from transmission. Beginning in the late 1990s, the U.S. electricity industry 
+opened generation to competition while maintaining regulation over the transmission 
+grid. Any new power plant must go through an interconnection process before 
+connecting to the grid and transmitting electricity. This process involves engineering 
+studies to ensure the new generator won't destabilize the system, overload 
+transmission lines, cause voltage fluctuations, or disrupt power flow to millions of 
+customers. It also includes cost studies to identify the necessary network upgrades to 
+connect the resource to the grid. Regional Transmission Organizations (RTOs), which 
+operate the grid across multiple states, manage the interconnection queues and 
+establish rules under the oversight of the Federal Energy Regulatory Commission 
+(FERC). 
+The interconnection queues have been overwhelmed by the growing number of 
+requests in recent years. As of 2024, more than 2,600 GW of proposed generation 
+capacity is waiting in the queues across the United States, more than double the 
+roughly 1,200 GW of generation installed on the grid.
+1
+ Approximately 12,000 projects 
+were actively waiting. RTOs and FERC have responded with reforms aimed at thinning 
+the queue and accelerating the process. RTOs adjusted from "first-come, first-served" 
+to "first-ready, first-served" frameworks, requiring developers to demonstrate 
+financial commitment and site control before entering or advancing in the queue.
+2
+ The 
+Midcontinent Independent System Operator (MISO), serving the central U.S. and parts 
+of the Gulf Coast, transitioned from a serial study—where projects were examined 
+individually—to a cluster study in 2017, where groups of projects are analyzed together 
+and their interconnection costs are allocated among them. PJM Interconnection (PJM), 
+the largest grid operator in the country, serving the Mid-Atlantic and parts of the 
+eastern U.S., tightened its requirements in 2019 to require site control and a financial 
+commitment at the time of application. In 2022, a major queue reform package 
+adopting a cluster study was approved under a FERC order, but the transition is 
+ 
+1
+ Joseph Rand et al., “Queued Up: 2025 Edition Characteristics of Power Plants Seeking Transmission 
+Interconnection As of the End of 2024,” n.d. 
+2
+ Les Armstrong et al., “Can Federal Grid Reforms Solve the Interconnection Problem?,” Science 385, no. 6704 
+(2024): 31–33, https://doi.org/10.1126/science.ado9254. 
+
+ 7 
+ongoing and not fully implemented as of early 2026.
+3
+ These reforms aim to reduce 
+backlogs, improve management efficiency, and achieve a healthier queue for all 
+projects.  
+In recent years, however, grid operators have turned to targeted rationing mechanisms 
+that prioritize a limited number of projects outside the standard process. PJM's 
+Reliability Resource Initiative (RRI) is intended to "holistically address significant 
+near-term resource adequacy concerns.”
+4
+ RRI took effect in February 2025, selects 
+projects through a scoring process that rewards reliability contributions and 
+commercial readiness, and processes them in a cycle with earlier-submitted projects. 
+MISO proposed the Expedited Resource Addition Study(ERAS) to "provide a 
+framework for accelerated study of generation projects that can address urgent 
+resource adequacy and reliability needs in the near term."
+5
+ ERAS began in August 2025, 
+and projects that meet the eligibility requirements are placed on a separate track and 
+studied serially.
+6
+   
+Rationing policies are driven by reliability urgency: the electricity supply's failure to 
+meet expected demand and unexpected outages. Concerns about reliability have 
+intensified in recent years among RTOs and federal agencies. In October 2024, PJM 
+President Manu Asthana said, “We need capacity – a lot of capacity,” voicing his 
+concern about resource adequacy at the annual meeting of the Organization of PJM 
+States.
+7
+ MISO’s Reliability Imperative, a long-term plan launched in 2020 that 
+publishes a report each year, began its 2024 report with a message from its CEO, John 
+Bear, “we have to face some hard realities,” and then outlined the fleet’s shift from 
+dispatchable resources to intermittent renewables, along with other challenges, 
+including extreme weather, large load, and supply chain and permitting issues for 
+generators.
+8
+ In December 2024, the North American Electric Reliability Corporation 
+ 
+3
+ PJM Interconnection, L.L.C, Tariff Revisions for Interconnection Process Reform (2022), 
+https://www.pjm.com/directory/etariff/FercDockets/6726/20220614-er22-2110-000.pdf. 
+4
+ PJM Interconnection, L.L.C., Tariff Revisions for Reliability Resource Initiative, Docket No.ER25-712 (2024), e, 
+library. 
+5
+ Midcontinent Independent System Operator, Inc., Revisions to the Open Access Transmission, Energy and 
+Operating Reserve Tariff Expedited Resource Addition Study Filing, Docket No.ER25-2454 (Federal Energy 
+Regulatory Commission, 2025). 
+6
+ Midcontinent Independent System Operator, Inc., Revisions to the Open Access Transmission, Energy and 
+Operating Reserve Tariff Expedited Resource Addition Study Filing. 
+7
+ “2024 in Review: Maintaining an Adequate Generation Supply | PJM Inside Lines,” accessed May 14, 2026, 
+https://insidelines.pjm.com/2024-in-review-maintaining-an-adequate-generation-
+supply/?utm_source=chatgpt.com. 
+8
+ Midcontinent Independent System Operator, Inc., 2024 Reliability Imperative Report (2025), 
+https://cdn.misoenergy.org/2024+Reliability+Imperative+report+Feb.+21+Final504018.pdf. 
+
+ 8 
+(NERC) published the Long-Term Reliability Assessment. This report highlighted 
+increasing resource adequacy risks across the country, especially with MISO and PJM 
+facing elevated risks under stress scenarios.
+9
+ 
+However, the rationing policies have been controversial among electricity 
+stakeholders. RRI was introduced at a stakeholder meeting in October 2024 and met 
+immediate pushback.
+10
+ Despite the controversy, PJM submitted the proposal to FERC 
+in December 2024, receiving support from some utilities and protests from clean-
+energy and consumer groups.
+11
+ RRI was approved on February 11, 2025, in a 3-1 
+decision.
+12
+ But the process is ongoing. Clean-energy groups requested rehearing in 
+March 2025, and the Solar Energy Industries Association and Invenergy Renewables 
+sued FERC in June 2025.
+13
+ ERAS went through a more circuitous process, first initiated 
+in MISO's stakeholder process
+14
+ and then revised based on stakeholder input before 
+MISO filed the proposal with FERC on March 17. FERC rejected it on May 16, 2025, in a 
+2-1 decision with guidance for revision.
+15
+ MISO refiled on June 6, 2025, with a 68-
+project total cap and a 10-per-quarter limit. FERC accepted the refiled proposal on 
+June 21, 2025.
+16
+ After rehearing requests from multiple groups, Earthjustice, on behalf 
+of a few environmental groups, filed a lawsuit challenging FERC’s approval of ERAS, 
+referred to as “fast-track the interconnection of mostly fossil-fueled generation.”
+17
+ 
+The controversy reveals that queue-rationing policies are not simply technical 
+responses to interconnection delay. They are decisions made under uncertainty: actors 
+ 
+9
+ the North American Electric Corporation, 2024 Long-Term Reliability Assessment (2024), 
+https://www.nerc.com/globalassets/our-work/assessments/2024-ltra_corrected_july_2025.pdf. 
+10
+ “PJM Introduces Interim Interconnection Process for Reliability | PJM Inside Lines,” accessed April 28, 2026, 
+https://insidelines.pjm.com/pjm-introduces-interim-interconnection-process-for-
+reliability/?utm_source=chatgpt.com. 
+11
+ Willie L. Phillips et al., 190 FERC ¶ 61,084 UNITED STATES OF AMERICA FEDERAL ENERGY REGULATORY 
+COMMISSION, n.d. 
+12
+ “Commissioner Phillips and Commissioner Rosner Concurrence Regarding PJM’s Reliability Resource Initiative 
+(RRI) Proposal (ER25-712-000) | Federal Energy Regulatory Commission,” accessed April 28, 2026, 
+https://www.ferc.gov/news-events/news/commissioner-phillips-and-commissioner-rosner-concurrence-
+regarding-pjms. 
+13
+ “Solar Energy Industries Association, et al v. FERC,” Justia Dockets & Filings, accessed May 14, 2026, 
+https://dockets.justia.com/docket/circuit-courts/ca3/25-2124. 
+14
+ “Expedited Resource Adequacy Study (ERAS) Workshop - December 6, 2024,” accessed April 28, 2026, 
+https://www.misoenergy.org/events/2024/expedited-resource-adequacy-study-eras-workshop---december-6-
+2024/. 
+15
+ “Commissioner See’s Concurrence on MISO’s Expedited Resource Addition Study (ERAS) Filing, Docket No. 
+ER25-1674 | Federal Energy Regulatory Commission,” accessed May 14, 2026, https://www.ferc.gov/news-
+events/news/commissioner-sees-concurrence-misos-expedited-resource-addition-study-eras-filing. 
+16
+ “Summaries | January 2026 Commission Meeting | Federal Energy Regulatory Commission,” accessed April 28, 
+2026, https://www.ferc.gov/news-events/news/summaries-january-2026-commission-meeting. 
+17
+ “Lawsuit Challenges FERC Approval of Central U.S. Grid Operator’s Fast-Track Energy Plan,” November 18, 
+2025, https://www.nrdc.org/press-releases/lawsuit-challenges-ferc-approval-central-us-grid-operators-fast-
+track-energy-plan. 
+
+ 9 
+dispute the severity of reliability needs, the causes of those needs, the harms of policy 
+departures, and the likely outcomes of project selection. This thesis examines how 
+uncertainties are managed in the making of rationing policies.   
+The analysis draws on three sources of evidence. First, through docket analysis, I 
+identify the uncertainties that entered the formal debate, how different stakeholders 
+interpreted them, and how decision makers acted despite unresolved uncertainty. 
+Second, through 18 interviews with clean energy advocates and analysts, I identify 
+uncertainties that were marginalized or left outside the formal debate. Third, using 
+queue composition data on ERAS and RRI, I examine the resource, ownership, and 
+geographic patterns produced by rationing policies. Together, these analyses explain 
+how uncertainty was introduced, addressed, narrowed, or omitted in the policy 
+process, and how reliability urgency shaped the management of uncertainty. 
+Interconnection governance faces pressures to modernize policymaking for the clean 
+energy transition and to accommodate unprecedented load growth.  Researchers 
+evaluate interconnection barriers using detailed queue metrics and interconnection 
+cost analysis.
+18
+ Legal scholars examine siloed governance as an obstacle to clean 
+energy and to holistic planning.
+19
+ Economists propose models for interconnection cost 
+allocation and market design.
+20
+ The interconnection policy-making process remains 
+understudied. This study contributes to that gap by empirically examining 
+interconnection policy through case studies of RRI and ERAS, and by showing how 
+uncertainty governance changes under conditions of reliability urgency. 
+ 
+ 
+18
+ Sarah Johnston et al., “An Empirical Analysis of the Interconnection Queue,” Working Paper no. 31946, Working 
+Paper Series (National Bureau of Economic Research, December 2023), https://doi.org/10.3386/w31946; Joachim 
+Seel et al., Interconnection Cost Analysis in the PJM Territory (Lawrence Berkeley National Laboratory, n.d.), 
+accessed April 10, 2026, https://emp.lbl.gov/publications/interconnection-cost-analysis-pjm. 
+19
+ Alexandra Klass et al., “Grid Reliability through Clean Energy,” Stanford Law Review 74, no. 5 (2022): 969–1072. 
+20
+ Michael J. Gergen et al., “A Modest Proposal: A Market-Based Approach to Generation Interconnection Process 
+Reform,” The Electricity Journal 21, no. 9 (2008): 8–18, https://doi.org/10.1016/j.tej.2008.10.003; Hung-po Chao and 
+Robert Wilson, “Coordination of Electricity Transmission and Generation Investments,” Energy Economics 86 
+(February 2020): 104623, https://doi.org/10.1016/j.eneco.2019.104623; Enzo E. Sauma and Shmuel S. Oren, 
+“Proactive Planning and Valuation of Transmission Investments in Restructured Electricity Markets,” Journal of 
+Regulatory Economics 30, no. 3 (2006): 261–90, https://doi.org/10.1007/s11149-006-9003-y. 
+
+ 10 
+Theory 
+To understand uncertainty management and the impact of urgency in the policy 
+process, I drew on theories for analytical aid. The Multiple Streams Approach (MSA) 
+helps theorize how urgency reaches the agenda, as analyzed in the background. The 
+Advocacy Coalition Framework (ACF) helps theorize how, once on the agenda, 
+contests over uncertainty are organized and resolved among policy actors within 
+institutions.   
+Urgency in multiple stream approach  
+The Multiple Streams Approach, originally developed by Kingdon,
+21
+ explains agenda-
+setting and decision-making as the convergence of independently flowing streams 
+under conditions of ambiguity.
+22
+ It contrasts with the rational policy process, which 
+moves from problem identification, through exhaustive research and evaluation, to 
+solution-finding. Problems, policy, and politics are treated as independent streams, 
+aligned by policy entrepreneurs to reach the agenda and move their preferred package 
+deals toward decisions. 
+MSA theorizes the impact of urgency on policymaking through this stream model. Two 
+fundamental assumptions are that time is a singular, irreplaceable resource and that 
+attention is necessarily confined to a few issues on the agenda. Because decision-
+makers' time is finite, policy windows open only briefly. Urgency further compresses 
+the policy window. Zahariadis's "Plato's Receptacle" theorizes deadlines as temporal-
+sorting mechanisms: shorter windows reduce conflict by limiting participation and 
+intensifying framing effects, while externally imposed deadlines favor larger 
+deviations from the status quo because policymakers can use them to deflect blame.
+23
+ 
+The "Shield of Heracles" adds an emotional endowment effect, in which novel, fear-
+evoking events interrupt ongoing behavior and divert attention toward threat stimuli, 
+enabling rapid coupling of problems and solutions.
+24
+ 
+ 
+21
+ Scott Greer, “John W. Kingdon, Agendas, Alternatives, and Public Policies,” in The Oxford Handbook of Classics 
+in Public Policy and Administration, ed. Martin Lodge et al. (Oxford University Press, 2015), 
+https://doi.org/10.1093/oxfordhb/9780199646135.013.18. 
+22
+ Paul A. Sabatier and Christopher M. Weible, Theories of the Policy Process, Third edition (Westview Press, 2014), 
+828832, https://research.ebsco.com/linkprocessor/plink?id=494ab2d3-9715-3585-8630-79547811ba17. 
+23
+ Nikolaos Zahariadis, “Plato’s Receptacle: Deadlines, Ambiguity, and Temporal Sorting in Public Policy,” in Zeit 
+Der Politik, 1st ed. (Nomos Verlagsgesellschaft mbH & Co. KG, 2015). 
+24
+ Nikolaos Zahariadis, “The Shield of Heracles: Multiple Streams and the Emotional Endowment Effect.,” 
+European Journal of Political Research 54, no. 3 (2015): 466–81, 108384587, https://doi.org/10.1111/1475-6765.12072. 
+
+ 11 
+MSA also helps theorize the production of urgency. It does not deny the reality of 
+urgent conditions but distinguishes between conditions and problems. Conditions are 
+objective states of affairs; they become problems only when participants come to 
+believe that something ought to be done to change them. This distinction contains 
+what Herweg, Zahariadis, and Zohlnhöfer describe as a "perceptual, interpretive 
+element": people define conditions as problems by comparing current circumstances 
+with normative ideals, benchmarking against other jurisdictions, or categorizing a 
+situation within a particular frame.
+25
+ Kingdon identifies three mechanisms through 
+which conditions come to policymakers' attention. Indicators, for example, regularly 
+published data on budgets, unemployment, energy prices, or system performance, 
+measure the magnitude of conditions and make it easier for actors to frame them as 
+problems requiring action. Focusing events, defined by Birkland as sudden and 
+relatively rare, are at least potentially harmful and are known to policymakers and the 
+public simultaneously, which can dramatically accelerate problem recognition.
+26
+ 
+Feedback from ongoing programs—like reports of failure, cost overruns, or 
+unexpected consequences—serves as another way for conditions to become prominent 
+in the problem stream.
+27
+ 
+Contestation in the advocacy coalition framework 
+The Advocacy Coalition Framework (ACF) provides a baseline model, organized 
+around the policy subsystem and its coalition actors that shape policymaking.
+28
+ As 
+Paul Cairney observes, the ACF aims to make sense of complex policy systems, ranging 
+from highly politicized disputes that draw broad participation to technical issues 
+routinely handled outside public view.
+29
+ Decisions are typically produced under 
+limited information and high levels of uncertainty and ambiguity. 
+Sabatier characterizes the policy subsystem as an arena of "substantial goal conflicts, 
+important technical disputes, and multiple actors from several levels of government." 
+ 
+25
+ Nicole Herweg et al., “Straightening the Three Streams: Theorising Extensions of the Multiple Streams 
+Framework.,” European Journal of Political Research 54, no. 3 (2015): 435–49, 108384589, 
+https://doi.org/10.1111/1475-6765.12089. 
+26
+ Thomas A. Birkland, After Disaster : Agenda Setting, Public Policy, and Focusing Events, in After Disaster : 
+Agenda Setting, Public Policy, and Focusing Events, American Governance and Public Policy (Georgetown 
+University Press, 1997). 
+27
+ Birkland, After Disaster : Agenda Setting, Public Policy, and Focusing Events. 
+28
+ Sabatier and Weible, Theories of the Policy Process. 
+29
+ Paul Cairney, “Paul A. Sabatier, ‘An Advocacy Coalition Framework of Policy Change and the Role of Policy-
+Oriented Learning Therein,’” in The Oxford Handbook of Classics in Public Policy and Administration, ed. Martin 
+Lodge et al. (Oxford University Press, 2015), https://doi.org/10.1093/oxfordhb/9780199646135.013.24. 
+
+ 12 
+Within this arena operate advocacy coalitions — "people from a variety of positions 
+(elected officials and agency officials, interest group leaders, researchers) who share a 
+particular belief system — i.e., a set of basic values, causal assumptions, and problem 
+perceptions — and who show a non-trivial degree of coordinated activity over time."
+30
+ 
+Typically, a dominant coalition—possessing greater resources and institutional 
+influence—competes against one or more minority or challenger coalitions. This 
+dominance endures through shaping policy narratives, controlling decision-making 
+agendas, and maintaining unequal access to resources such as legal authority, public 
+opinion, information, mobilizable constituents, financial backing, and effective 
+leadership.
+31
+ 
+Venues are decision-making arenas in which coalitions attempt to influence the 
+decisions made by other coalitions and by government agency officials. Venues are 
+closely tied to subsystem types. Weible categorizes subsystems as unitary, adversarial, 
+or collaborative. A unitary subsystem features a single dominant coalition, leading the 
+final decision. An adversarial subsystem is marked by high conflict among competing 
+coalitions, while a collaborative subsystem involves cooperative coalitions where 
+conflict remains at intermediate levels. Traditional venues — legislative committees 
+and subcommittees, courts, executives, and administrative agencies — tend to 
+dominate adversarial and unitary subsystems and are limited in their capacity to 
+resolve conflicts: courts, for example, settle procedural questions rather than 
+substantive disputes, and these venues constrain participation among interested and 
+affected actors and narrow discourse by relying largely on hearings and testimony. 
+Alongside these traditional venues are consensus-based institutions, characterized by 
+deliberative norms of engagement, inclusive participation, and transparent rules of 
+negotiation, in which substantive issues can be discussed and potentially resolved. 
+The choice and structure of venues, therefore, exerts substantial influence over policy 
+outcomes.
+32
+ 
+ 
+30
+ Paul A. Sabatier, “An Advocacy Coalition Framework of Policy Change and the Role of Policy-Oriented Learning 
+Therein,” Policy Sciences 21, no. 2 (1988): 129–68, https://doi.org/10.1007/BF00136406. 
+31
+ Paul A. Sabatier and Hank C. Jenkins-Smith, Policy Change and Learning : An Advocacy Coalition Approach, in 
+Policy Change and Learning : An Advocacy Coalition Approach, Theoretical Lenses on Public Policy (Westview 
+Press, 1993). 
+32
+ Sabatier, “An Advocacy Coalition Framework of Policy Change and the Role of Policy-Oriented Learning 
+Therein.” 
+
+ 13 
+Uncertainty and expert-based information in the ACF 
+Uncertainty in the policy subsystem is threefold: actors are unable to know the 
+components that define and affect a subsystem (problem severity, the range of 
+plausible causes and actions, and likely consequences); they are unable to fully 
+measure or understand those components; and they are unable to know the links or 
+probabilities between actions and outcomes.
+33
+ Such uncertainty affords discretion in 
+interpretation, opening space for contestation.
+34
+  
+Information is therefore central to the ACF's treatment of uncertainty. Weible 
+distinguishes three uses of expert-based information: instrumental, political, and 
+learning. The instrumental use rests on a rational, idealized model of problem solving 
+— a problem is identified, research is conducted, and a decision follows from the 
+findings. Instrumental use can reduce uncertainty under conditions of analytical 
+tractability — Jenkins-Smith's concept clarifies when uncertainty is genuinely 
+reducible by evidence rather than weaponized in political conflict. Instrumental use of 
+science is most likely in professional forums where coalitions work cooperatively, 
+often alongside scientists. The political use of information, by contrast, serves to 
+mobilize coalition allies around an issue or to counter opponents' arguments during 
+conflict; expert-based information thus becomes a coalition resource, and policy-
+oriented learning tends to occur within a coalition rather than across coalitions. 
+Learning across coalitions, in any case, is unlikely to occur over short periods.
+35
+ 
+Interconnection as a policy subsystem with coalitions, FERC as a venue 
+I analyze the interconnection policy as a policy subsystem, defined as a decision-
+making network of policy participants focused on policy issues within a geographic 
+boundary. Coalitions in the interconnection policy subsystem include market 
+participants, i.e., utilities, developers, power suppliers, and transmission owners, as 
+well as purposive groups, including environmental groups, customer advocates 
+representing consumer interests, and Regional Transmission Organizations as 
+coordinators. 
+ 
+33
+ Bryan D. Jones, Politics and the Architecture of Choice : Bounded Rationality and Governance, in Politics and 
+the Architecture of Choice : Bounded Rationality and Governance (University of Chicago Press, 2001). 
+34 
+Christopher M. Weible, “Expert-Based Information and Policy Subsystems: A Review and Synthesis,” Policy 
+Studies Journal 36, no. 4 (2008): 615–35, https://doi.org/10.1111/j.1541-0072.2008.00287.x. 
+35
+ Weible, “Expert-Based Information and Policy Subsystems.” 
+
+ 14 
+RTOs are non-profit organizations responsible for reliability and market rulemaking 
+within their respective regions.
+36
+ RTO policymaking usually involves broad 
+stakeholder engagement, but formal votes are typically organized by member or 
+market sectors, such as utilities, generators, transmission owners, developers, and 
+end-use customers.
+37
+ RTO governance has been described as "black-box" governance, 
+interactive yet possibly opaque regarding final decision-making.
+38
+ RTOs do not hold 
+formal authority over final decisions, but they hold technical authority and draft 
+policies for FERC’s approval. 
+FERC functions as a quasi-judicial entity. For specific tariffs, the Commission does not 
+assign its staff to perform a dedicated technical analysis. It functions like a court,
+39
+ 
+deciding based on the evidence presented in the record: comments, protests, expert 
+testimony, and white papers submitted by the parties. Technical research is conducted 
+by agencies such as NERC, but these bodies do not conduct in-depth analysis of 
+individual filings. Technical matters are largely delegated to RTOs. The commissioners 
+at FERC make the final interconnection policy decisions by voting to approve or reject. 
+ 
+Background  
+Viewed through Multiple Streams theory, persistent interconnection backlogs were 
+the underlying condition, while prior queue reforms revealed the limits of existing 
+interconnection processes. Reports of declining resource adequacy provided 
+indicators of reliability concerns, and the PJM capacity price spike drew sharper 
+attention to the issue. Together, these pressures contributed to a broader sense of 
+reliability urgency, not caused by interconnection delays alone, and helped build 
+momentum for queue-rationing policies. 
+ 
+36 
+“An Introductory Guide for Participation in PJM Processes | Federal Energy Regulatory Commission,” accessed 
+March 21, 2026, https://www.ferc.gov/introductory-guide-participation-pjm-processes. 
+37
+ Sustainable FERC Project, Understanding Energy: PJM Explained, n.d., 
+https://www.nrdc.org/sites/default/files/media-uploads/pjm_explainer_-_sustainableferc.pdf; “Participation in 
+Midcontinent Independent System Operator (MISO) Processes | Federal Energy Regulatory Commission,” 
+accessed March 21, 2026, https://www.ferc.gov/participation-midcontinent-independent-system-operator-miso-
+processes. 
+38
+ Stephanie Lenhart and Dalten Fox, “Participatory Democracy in Dynamic Contexts: A Review of Regional 
+Transmission Organization Governance in the United States,” Energy Research & Social Science 83 (January 2022): 
+102345, https://doi.org/10.1016/j.erss.2021.102345. 
+39
+ “Interview #10,” (Virtual meeting room), February 2026. 
+
+ 15 
+The condition: queue backlogs 
+A project that sits in the queue for years is a common experience among developers. 
+According to Lawrence Berkeley National Laboratory(LBNL)'s utility-scale wind and 
+solar survey, for projects completed between 2018 and 2023, measured from contract to 
+commercial operation date, more than three-fourths of solar and wind projects took 
+four to six years, and one-fifth took more than six years.
+40
+ In PJM, it now takes an 
+average of about eight years to bring a new generator online.
+ 
+For active projects still in 
+the queue, estimated costs have grown eightfold since 2019.
+ 41
+ MISO, despite 
+implementing cluster studies and readiness requirements earlier, faces conditions that 
+are no brighter. An experienced developer described one project without extensive 
+transmission support: developed in 2019, it received approval only in 2025 and is 
+planned to come online by 2027. From submission to GIA, six years in MISO is, in the 
+developer's words, "lucky."
+42
+ Long waiting times and high interconnection costs are 
+identified as the major barriers
+43; uncertainties about policy changes and about other 
+projects in the queue were raised by three developers I spoke with. 
+Long waiting times result from several factors. One is the complex, time-intensive 
+nature of studying the impact of a new generator on the regional grid. The standard 
+sequence runs as follows: a project developer initiates a new interconnection request 
+(IR), thereby entering the queue; a series of interconnection studies determines what 
+new transmission equipment or upgrades may be needed and assigns the costs of that 
+equipment; finally, an interconnection agreement (IA) — a contract between the ISO 
+and the generation owner — stipulates operational terms and cost responsibilities. 
+Interconnection studies can change when the queue status changes. When projects 
+drop out, they create a domino effect in the cycle, causing subsequent projects to be 
+re-studied. A second factor is the sheer number of requests and the growing 
+interconnection queue. Across both MISO and PJM, the number of interconnection 
+requests and the total capacity seeking access to the grid have surged. In 2020, the 
+ 
+40
+ Robi Nilson et al., Survey of Utility-Scale Wind and Solar Developers Report, January 18, 2024, 
+https://escholarship.org/uc/item/1w00h67w. 
+41
+ Laurie Stone, “PJM’s Speed to Power Problem and How to Fix It,” RMI, November 4, 2025, https://rmi.org/pjms-
+speed-to-power-problem-and-how-to-fix-it/. 
+42
+ “Interview #15,” (Virtual meeting room), February 2026. 
+43
+ Will Gorman et al., “Grid Connection Barriers to Renewable Energy Deployment in the United States,” Joule 9, 
+no. 2 (2025), https://doi.org/10.1016/j.joule.2024.11.008; Johnston et al., “An Empirical Analysis of the 
+Interconnection Queue”; Dana Ammann, Waiting Game: How the Interconnection Queue Threatens Renewable 
+Development in Pjm (Natural Resources Defense Council(NRDC), 2023), 
+https://doi.org/10.1163/9789004322714_cclc_2023-0158-0738. 
+
+ 16 
+total number of requests in the MISO queue was less than 200. In 2021, it gradually 
+increased to around 500. In 2022, it surged to over 1,000 requests. MISO implemented 
+some changes in 2023, but in 2024, requests rose again to over 600. PJM showed a 
+similar trend, with even higher volumes. In 2021, it received over 1,500 requests and 
+has since frozen new applications to clear the backlog.
+ 44
+  
+Withdrawals and high interconnection costs feed on each other, making 
+interconnection difficult to manage. In MISO, between 2000 and 2020, 69% of the 2,782 
+total requests were withdrawn on average, and 75% of 501 GW withdrew before signing 
+an interconnection agreement. PJM's withdrawal rate is 70% across 5,590 requests. 
+45
+ 
+Network upgrade costs have been a major contributor to the high withdrawal rate. 
+Under serial cost allocation, each generator pays for the transmission infrastructure 
+needed when it connects to the grid. Often, one project is assigned a high cost to 
+upgrade the network, but subsequent projects can then use the capacity created by 
+the first project and are assigned a lower cost. When a project drops out, costs 
+typically shift onto others, producing a domino effect of cancellations. Project 
+developers, knowing there is a chance of getting lucky with a lower network upgrade 
+cost assignment, have an incentive to enter multiple project proposals at multiple 
+locations. Developers attempt to optimize their location strategies through 
+prescreening, in-house modeling, and consultants. They are often uncertain about the 
+outcome of interconnection studies because queue status changes — a previously 
+entered project may be dropped after submission. These incentives and uncertainties 
+produce a highly fluid queue. A technical professional described the impact of 
+withdrawals on the queue: "No one raindrop is responsible for the flood. No single 
+project is the problem. It's the collective volume."
+46
+ 
+Beyond the potential for speculation, the long wait time makes some projects no 
+longer feasible. Developers described interconnection delays as a "pile-up"
+47
+ effect in 
+which queue delays cascade into every other aspect of project development. Site land 
+and permits typically expire in one or two years. Longer waiting times produce costly, 
+wasteful cycles of redoing the permitting process. Equipment procurement and 
+ 
+44
+ Author’s calculation, data source: Lawrence Berkeley National Laboratory, “Queued Up: Characteristics of 
+Power Plants Seeking Transmission Interconnection,” August 2025, https://emp.lbl.gov/queues. 
+45
+ Author’s calculation, data source: Lawrence Berkeley National Laboratory, “Queued Up: Characteristics of 
+Power Plants Seeking Transmission Interconnection,” August 2025, https://emp.lbl.gov/queues. 
+46
+ “Interview #17,” (Virtual meeting room), February 2026. 
+47
+ “Interview #14,” (Virtual meeting room), February 2026. 
+
+ 17 
+financial closings are also delayed. These delays affect the financing of a private 
+project and can render it no longer feasible. 
+Beyond the potential for speculation, the long wait time makes some projects no 
+longer feasible. Developers described interconnection delay as a "pile-up" effect in 
+which queue delays cascade into every other aspect of project development. Site land 
+and permits typically expire in one or two years. Longer waiting times produce costly, 
+wasteful cycles of redoing the permitting process. Equipment procurement and 
+financial closings are also delayed. All these delays affect the financing of a private 
+project and can render it no longer feasible. 
+Interconnection challenges have intensified with the advancement of clean 
+technologies. The growth of renewables has added capacity and crowded out or 
+replaced some old coal plants. Requests have also increased exponentially because 
+clean-energy projects tend to be smaller than traditional, large fossil plants. In PJM, 
+solar grew from 2009 to become the largest share in the queue
+48
+. Batteries also 
+appeared in 2010 and have grown to roughly one-fourth of the occupied queue. MISO 
+has seen a similar shift. The move from large, location-agnostic fossil-fuel plants to 
+small-capacity renewables has increased the number of requests. The same 700 MW of 
+capacity spread across ten or fifteen renewable energy sites — each in a different 
+location with different grid conditions — is far more complex to study than a single 
+concentrated site. Renewables, as intermittent resources, also require more advanced 
+coordination technology, which has improved in recent years but operates on 
+different time scales than fossil fuels. Clean energy is also locationally constrained and 
+requires more transmission build-out to move power from rural generation sites to 
+load centers.  
+Transmission lines, however, have not progressed at a comparable pace. In 2023, only 
+55 miles of new high-voltage regional transmission lines were built. The annual 
+average of 1,700 miles of new high-voltage transmission from 2010 to 2014 dropped to 
+925 miles from 2015 to 2019 and has fallen further to roughly 350 miles per year from 
+2020 to 2023. Permitting, planning, and cost allocation, among other factors, shape 
+overall transmission build-out, placing interconnection under physical constraints 
+and making transmission capacity itself a temporarily scarce good. An analyst at the 
+ 
+48
+  Author’s calculation, data source: Lawrence Berkeley National Laboratory, “Queued Up.” 
+
+ 18 
+Natural Resources Defense Council pointed to the underlying problem: an 
+"increasingly maxed-out grid that has stagnated amid years of underinvestment in 
+transmission infrastructure." 
+49
+ The problematic conditions exist in interconnection 
+and outdated policies in the face of changing resources and the electricity market. The 
+bottleneck, however, now faces new challenges. 
+The challenge: unprecedented load  
+After nearly two decades of essentially no more than 1% growth in electricity demand 
+since the 2000s, the U.S. power system is absorbing a load shock, with data centers the 
+single largest driver. Lawrence Berkeley National Laboratory's December 2024 United 
+States Data Center Energy Usage Report found that data-center electricity 
+consumption more than doubled between 2018 and 2023, rising from roughly 76 TWh 
+(1.9 % of U.S. electricity) to 176 TWh (4.4 %), and projected a 2028 range of 325 to 580 
+TWh, or 6.7 to 12.0 % of national consumption
+50
+. The National Telecommunications and 
+Information Administration counts more than 5,000 operating U.S. data centers and 
+projects sectoral demand to grow by roughly 9% annually through 2030.
+ 51
+  
+In the PJM region, Northern Virginia's "Data Center Alley" in Loudoun County has been 
+a central hub for data centers. 
+52
+ Loudoun County alone hosts more than 4,900 MW of 
+operating data-center capacity. Dominion Energy's October 2024 Integrated Resource 
+Plan, filed with the Virginia State Corporation Commission, projects that energy 
+demand in its service territory will grow 5.5 % annually and more than double over the 
+next fifteen years
+53
+, with data-center peak load reaching roughly 9 GW within a 
+decade.
+ 54
+ By the end of 2024, Dominion's contracted data-center capacity had grown 
+from approximately 21 GW in July 2024 to 40 GW in December, an 88% increase over 
+five months
+55
+. 
+ 
+49
+ “Interview #4,” (Virtual meeting room), February 2026. 
+50
+ Arman Shehabi et al., United States Data Center Energy Usage Report, LBNL--1005775, 1372902 (2016), LBNL--
+1005775, 1372902, https://doi.org/10.2172/1372902. 
+51
+ “NTIA Seeks Comments on Supporting U.S. Data Center Growth | National Telecommunications and Information 
+Administration,” accessed April 28, 2026, https://www.ntia.gov/press-release/2024/ntia-seeks-comments-
+supporting-us-data-center-growth. 
+52
+ Peter Behr, “Data Center Boom Sparks Sticker Shock for PJM Ratepayers,” E&E News by POLITICO, October 3, 
+2025, https://www.eenews.net/articles/data-center-boom-sparks-sticker-shock-for-pjm-ratepayers/. 
+53
+ Dominion Energy Integrated Resource Plan Projects Historic Rate Increases for Virginia Ratepayers While 
+Subsidizing the World’s Wealthiest Companies - The Piedmont Environmental Council, Data Centers, October 17, 
+2024, https://www.pecva.org/region/loudoun/dominion-energy-integrated-resource-plan-projects-historic-rate-
+increases-for-virginia-ratepayers-while-subsidizing-the-worlds-wealthiest-companies/. 
+54
+ Kush Patel et al., Virginia Data Center Study, n.d. 
+55
+ David Chernicoff Vincent Matt, “The Future of Property Values and Power in Virginia’s Loudoun County and 
+‘Data Center Alley,’” Data Center Frontier, February 14, 2025, https://www.datacenterfrontier.com/site-
+
+ 19 
+MISO faces similar challenges. Between 2009 and 2024, MISO's peak load grew by only 
+0.5% per year. Yet, in the 2024 load forecast, MISO estimated that data centers alone 
+could account for 23 to 37 GW (149 to 241 TWh) of load within the footprint by 2044.
+56
+ 
+The spotlight development is Meta's December 2024 announcement of a $10 billion AI 
+training campus in Richland Parish, Louisiana, which will be served by Entergy 
+Louisiana and will be Meta's largest data center worldwide.
+57
+ At full operation, the 
+facility is projected to consume roughly three times the electricity used annually in 
+New Orleans. Northern Indiana Public Service Company (NIPSCO) filed a special 
+contract with the Indiana Utility Regulatory Commission in November 2024 to serve up 
+to 2.4 GW of Amazon data-center load by 2032,
+ 58
+ with NiSource Inc. (NIPSCO’s parent 
+company) pursuing an additional 3 GW in negotiations and another 3 GW in the 
+pipeline.  MidAmerican Energy attributed accelerating retail load growth in 2024 and 
+2025 largely to data centers.
+59
+ Alliant Energy reported approximately 2.1 GW of 
+contracted data-center peak demand.
+60
+ Ameren Missouri's February 2025 revised IRP 
+added 1.5 GW of expected demand by 2032, including 1,600 MW of new gas generation 
+by 2030, citing data-center inquiries.
+61
+ 
+"Data centers are throwing a lot of chaos into the energy system,"
+62
+ an analyst in the 
+MISO region said. A 2024 utility survey from the Electric Power Research Institute finds 
+that all responding utilities have current requests that exceed their operational 
+capacity to connect, and almost half of the 25 responding utilities have requests that 
+exceed 50% of their present system peak demand. “There is no consensus among the 
+responding utilities on how to incorporate DC [data center] service requests in their 
+ 
+selection/article/55266317/the-future-of-property-values-and-power-in-virginias-loudoun-county-and-data-
+center-alley. 
+56
+ the Midcontinent Independent System Operator, and Inc., MISO Long-Term Load Forecast Whitepaper (2024), 
+https://cdn.misoenergy.org/MISO%20Long-
+Term%20Load%20Forecast%20Whitepaper_December%202024667166.pdf. 
+57
+ “The Largest Meta Data Center yet Brings Big Impact to Louisiana,” Meta Data Centers, n.d., accessed April 28, 
+2026, https://datacenters.atmeta.com/richland-parish-data-center/. 
+58
+ “NIPSCO to Supply 3 GW to Amazon Data Centers in Northern Indiana | Utility Dive,” accessed April 28, 2026, 
+https://www.utilitydive.com/news/nisource-nipsco-amazon-data-centers-indiana/806396/. 
+59
+ Midamerican Energy Company, Resource Evaluation Study Report (2024), 
+https://www.midamericanenergy.com/media/pdf/mec_resource_evaluation_study_11-1.pdf. 
+60
+ Alliant Energy Corporation, June Investor Meetings, (06/2025), n.d., 
+https://s201.q4cdn.com/991130938/files/doc_presentations/2025/Jun/10/1076800-Investor-Relations-BofA-
+NDR_Final.pdf. 
+61
+ “Ameren Missouri Unveils Plan to Enable Economic Growth, Boost Reliability and Create Jobs in the State,” 
+accessed April 28, 2026, https://www.amereninvestors.com/investors/financial-releases/financial-releases-
+details/2025/Ameren-Missouri-unveils-plan-to-enable-economic-growth-boost-reliability-and-create-jobs-in-
+the-state/default.aspx. 
+62
+ “Interview #3,” (Virtual meeting room), February 2026. 
+
+ 20 
+load forecasts, but there are shared challenges given the speculative nature of some 
+service requests.”
+63
+  
+The indicator: resource adequacy 
+Resource adequacy is the concept used to assess whether sufficient generators and 
+transmission capacity are available to meet demand. As one of three components of 
+grid reliability in the bulk power system, it is defined as:  
+“The ability of the electricity system to supply the aggregate electrical demand 
+and energy requirements of the end-use customers at all times, taking into 
+account scheduled and reasonably expected unscheduled outages of system 
+elements.”
+64
+ 
+Resource adequacy is measured by the probability of undersupply. This probability 
+can be managed by adding a planning reserve margin, an extra amount of capacity to 
+account for uncertainty in load growth and outages of generators or transmission 
+lines. Standard practice is a 15% reserve margin, which corresponds to a 1-in-10-year 
+event requiring 15% more than the expected peak load.  
+Multiple institutions with overlapping jurisdictions govern reliability and resource 
+adequacy. FERC oversees bulk-power reliability through the approval and 
+enforcement of mandatory reliability standards, while NERC, certified by FERC as the 
+Electric Reliability Organization, develops reliability standards subject to FERC 
+approval and oversight. These standards apply to registered users, owners, and 
+operators of the bulk power system, including relevant grid operators. RTOs and ISOs 
+also manage regional grid operations and implement FERC-approved market rules that 
+shape resource adequacy. In MISO, resource adequacy is organized around seasonal 
+capacity requirements; load-serving entities can demonstrate sufficient resources 
+through self-supply, bilateral contracting, or market-based acquisition through 
+MISO’s Planning Resource Auction. MISO’s auction functions mainly as a residual 
+mechanism for entities with shortfalls. PJM, by contrast, relies more heavily on a 
+centralized capacity market: its Reliability Pricing Model includes a Base Residual 
+Auction and incremental auctions, and participation by load-serving entities is 
+ 
+63
+ D. Larson, Utility Experiences and Trends Regarding Data Centers: 2024 Survey (n.d.), accessed May 14, 2026, 
+https://www.epri.com/research/products/000000003002030643. 
+64
+ National Renewable Energy Laboratory, Explained: Fundamentals of Power Grid Reliability and Clean Electricity, 
+2024. 
+
+ 21 
+mandatory unless they use the Fixed Resource Requirement alternative. States also 
+play a major role through utility planning and procurement. More than 35 states 
+require utilities to file integrated resource plans or equivalent planning documents, 
+and IRPs are used to show how utilities plan to meet forecasted electricity demand 
+over a future planning period.
+65
+ 
+Public statistics published by authoritative institutions highlight urgent reliability 
+concerns. In May 2024, NERC published its long-term reliability assessment. In MISO, 
+the expected reserve margin declines from 17% in 2025 to 10.6% in 2030. The NERC 
+assessment indicates that the critical point will arrive in 2030. In PJM, the forecast 
+reserve margin is 34.9% in 2025, declines to 23.1% in 2030, and falls further to 16.8% in 
+2034 — below the reference margin level of 17.6%.  
+The focusing event: spiking capacity prices 
+Focusing events tend to direct attention to some problems and away from others.   As 
+Cobb and Elder note, when legislators or government officials begin discussing a 
+problem, the press tends to follow
+66
+. The capacity-market shock made the problem 
+more tangible and visible and gave interconnection political salience once elected 
+officials framed it as a crisis. 
+The spike in PJM's capacity market made reliability concerns concrete and drew 
+public attention. In 2024, auction prices in PJM cleared at $269.92/MW-day, compared 
+with $28.92/MW-day the previous year. The capacity market does not pay for actual 
+electricity; instead, plants are paid for being available to supply electricity in the 
+future. In general economic terms, ample supply produces lower prices and scarcity 
+produces higher prices. Prices in that auction were even higher in some regions: in the 
+Baltimore Gas and Electric zone in Maryland, for example, prices hit the cap of 
+$466.35/MW-day.
+ 67
+ In the wake of the price spike, politicians increasingly discussed 
+electricity supply. The U.S. Department of Energy declared an energy "emergency" in 
+June when it ordered Constellation Energy to continue operating generating units in 
+Pennsylvania that the company had planned to retire. In December 2024, Pennsylvania 
+Governor Josh Shapiro described the auction outcome as "the largest unjust wealth 
+ 
+65
+ “Reliability Explainer | Federal Energy Regulatory Commission,” accessed May 15, 2026, 
+https://www.ferc.gov/reliability-explainer. 
+66
+ Roger W. Cobb and Charles D. Elder, Participation in American Politics: The Dynamics of Agenda-Building (Johns 
+Hopkins University Press, 1983). 
+67
+ “PJM Capacity Prices Set Another Record with 22% Jump | Utility Dive,” accessed April 11, 2026, 
+https://www.utilitydive.com/news/pjm-interconnection-capacity-auction-prices/753798/. 
+
+ 22 
+transfer in the history of US energy markets." The complaint Pennsylvania submitted 
+to FERC against PJM cited three reasons for the unexpected outcome: significant load 
+growth, the country's most congested interconnection queue, and a compressed 
+capacity-auction schedule. PJM leadership has indicated that fixing the capacity 
+market requires interconnection reforms: "The most enduring way to bring both 
+capacity and energy market prices down is ensuring sufficient supply through 
+functional interconnection queues." PJM leadership delivered the message at the 
+Organization of PJM States meeting in October 2024.
+68
+ "I feel more concerned today 
+than I did two years ago about resource adequacy," PJM CEO Manu Asthana said. 
+"Load is growing much faster than we had projected then, which even back then was 
+an eye-popping set of numbers," Asthana mentioned the Reliability Resource Initiative 
+as a one-off effort to add generation capacity quickly.
+69
+ 
+ 
+Data and Method 
+Docket documents include original tariffs filed by RTOs, comments submitted to FERC 
+by various stakeholders, and the FERC order. I coded contested issues as uncertainties 
+and stakeholders' interpretations. Interviews were selected to understand the context 
+of interconnection governance and to explain uncertainties of concern that are not 
+included in the formal record. Interviewees include clean-energy industry 
+professionals, independent researchers, and advocacy organizations. Quantitative 
+analysis of queue data provides evidence of queue composition in the fast-track and 
+standard processes. 
+Quantitative data on interconnection queues come from the Queued-Up dataset by 
+Lawrence Berkeley National Laboratory, covering project records from seven ISO/RTO 
+queues in the U.S. through 2024. It includes project details like fuel type, capacity, 
+entry date, and status. I used MISO and PJM subsets to analyze trends in requests, 
+withdrawals, and fuel types. Additionally, I obtained ERAS and RRI project lists from 
+ 
+68
+ “PJM Capacity Auction Procures Sufficient Resources To Meet RTO Reliability Requirement | PJM Inside Lines,” 
+accessed April 11, 2026, https://insidelines.pjm.com/pjm-capacity-auction-procures-sufficient-resources-to-
+meet-rto-reliability-requirement/. 
+69
+ Manu Asthana, “Testimony of Manu Asthana,” U.S. HOUSE OF REPRESENTATIVES COMMITTEE ON ENERGY & 
+COMMERCE, SUBCOMMITTEE ON ENERGY, March 25, 2025, https://www.pjm.com/-
+/media/DotCom/library/reports-notices/testimony/2025/20250325-asthana-testimony-us-house-subcommittee-
+on-energy.pdf. 
+
+ 23 
+these websites to examine fuel, location, and capacity. The ERAS data also includes 
+institutional info like customer, transmission owner, and project need summaries. 
+I analyzed three FERC docket filings: Docket No. ER25-712 for PJM's RRI proposal; 
+Docket No. ER25-1674 for MISO's initial ERAS filing; and Docket No. ER25-2454 for 
+MISO's revised ERAS filing. For each proceeding, I reviewed the RTO's tariff revisions 
+and the summaries in the FERC order. I then selected intervening comments for closer 
+analysis from the full set of notices and responsive pleadings: 24 from the RRI docket, 
+18 from the initial ERAS docket, and 36 from the revised ERAS docket. Filers included 
+RTOs, utilities, independent power producers, state regulators, consumer advocates, 
+and clean energy and environmental groups. I thematically analyzed these documents 
+in two steps. First, I coded each document for contested issues related to uncertainty, 
+identifying which uncertainties the filer raised, contested, or sought to resolve. 
+Second, I organized the arguments and supporting evidence by institutional position, 
+including the RTOs' explanations in their tariff revisions and motions for leave to 
+answer, the responses from intervening stakeholders, and the reasoning FERC adopted 
+in its orders. 
+I conducted eighteen semi-structured interviews with clean-energy advocates, 
+experts, and developers from MISO and PJM regions via video conference, each lasting 
+30 minutes to an hour. Interviewees were chosen via three methods. First, I reached 
+out to organizations that provided comments during the RTO stakeholder process or 
+FERC comment period and contacted their representatives for interviews. Second, I 
+approached individuals who signed petitions. Third, some participants were suggested 
+by earlier interviewees. This process resulted in a sample of people actively involved 
+in interconnection policy, many of whom participated directly in ERAS or RRI 
+policymaking. 
+Interviewees represent five organizational categories: environmental organizations, 
+clean-energy trade associations, renewable-energy developers, consumer advocacy 
+groups, and independent experts from consulting and academic research. To protect 
+confidentiality, all interviewees are identified by number rather than name, and 
+organizational affiliations are described at the category level. Nine interviewees were 
+directly involved in the process, drafting comments at FERC. Four were actively 
+engaged in stakeholder meetings and worked within active institutions, but did not 
+sign off on public records. Five provide general expertise from working and 
+
+ 24 
+researching on interconnection, with attention to fast-track policies. Eight 
+interviewees engaged in both RTOs; six focused primarily on MISO and four on PJM. 
+ 
+Table    1: Interview sample 
+Each interview combined a standard set of questions with additional questions 
+tailored to the interviewee's role and expertise. The standard questions covered three 
+areas. The first concerned the interviewee's engagement in interconnection policy: 
+how they and their organization became involved, why organizations chose to form or 
+join coalitions, and how those coalitions were organized. The second addressed their 
+experience with RTO stakeholder processes and how the ERAS and RRI proceedings 
+compared with engagement on other interconnection reforms. The third, and central, 
+focus was the uncertainties in ERAS and RRI, including the targeted, the potential 
+harm, and the possible outcome. Within this third area, interviewees were also invited 
+to discuss how to manage those uncertainties. Two open-ended questions closed each 
+interview: what alternatives to fast-track approaches the interviewee would have 
+preferred, and what role long-term transmission planning should play in 
+interconnection reform. For developers, questions focused on past interconnection 
+reforms and on decisions to participate in ERAS or RRI. For interviewees with policy 
+and strategy expertise, additional emphasis was placed on governance challenges and 
+the dynamics of stakeholder engagement. For those with technical backgrounds, 
+questions addressed the conduct of interconnection studies, models and data, and the 
+design criteria for fast-track policies. For interviewees with legal expertise, additional 
+questions covered the division of state and federal jurisdiction, legal precedent, 
+litigation strategies, and the legal burden of advocating for or protesting such policies. 
+ 
+
+ 25 
+Docket: contested uncertainties within the federal regulatory venue 
+Under conditions of reliability urgency, RTOs, under pressure to reduce 
+interconnection delays, suggested queue-rationing as targeted interventions. In the 
+ERAS and RRI dockets at FERC, the resulting controversy centered on uncertainties 
+within the interconnection policy subsystem. First, coalitions disputed the 
+components defining the problem: the severity and geographic specificity of the 
+reliability concern, the extent to which that concern could be clearly identified, and 
+the necessity of queue rationing as the appropriate policy response. Second, they 
+disagreed over whether key components could be measured or understood with 
+sufficient confidence and acknowledged that cost impacts and system consequences 
+were uncertain but were interpreted differently across coalitions. Third, they 
+contested the assumed link between policy design and outcomes, particularly whether 
+viability criteria could reliably identify resources capable of delivering the promised 
+reliability benefits. 
+Uncertainty over reliability needs  
+Rationing policies were based on short-term reliability needs, but uncertainties about 
+the magnitude and timing left the shortfall disputed. Utilities largely accepted the 
+forecasts; clean energy actors pushed back, urging that a clearly defined reliability 
+need serve as the threshold for ERAS and RRI. 
+PJM’s reliability needs estimate. In the proposed RRI tariff, PJM quantified the "acute 
+need" as a 10-Gigawatt capacity shortfall for the 2030/31 delivery year, and this figure 
+"could potentially swell to 26 Gigawatts once the most recent load forecast is 
+finalized."
+70
+ The 10 Gigawatts originated in PJM's internal report, Resource 
+Retirements, Replacements & Risks, also known as the "Four Rs" report, published in 
+February 2023.
+71
+ The Four Rs report explained the shortfall using a balance sheet that 
+compared generation resources’ supply with the near-term load forecast. The supply 
+side accounts for planned retirements; new entries from gas, renewables, and storage; 
+and the declining capacity contribution of intermittent resources as they take a larger 
+share of the mix. Existing supply decreases due to expected retirements driven by 
+state and federal policies and deteriorating economics. PJM assumed that new supply 
+ 
+70
+ PJM Interconnection, L.L.C., Tariff Revisions for Reliability Resource Initiative. 
+71
+ “PJM Details Resource Retirements, Replacements and Risks | PJM Inside Lines,” accessed April 21, 2026, 
+https://insidelines.pjm.com/pjm-details-resource-retirements-replacements-and-risks/. 
+
+ 26 
+will be limited across all resource types: 17.6 GW of gas in the queue was unlikely to be 
+built and therefore counted only upgrades from old projects and projects already 
+under construction; Renewables were estimated using a logistic regression model 
+trained on historical queue data to predict the completion rate from queue entry to in-
+service, which is relatively low. The individual capacity of renewables is adjusted 
+downward because renewables cannot reliably supply load, and these capacity 
+contribution values decrease further as more intermittent resources are integrated 
+into the grid. On the demand side, the four R report in 2023 has yet to be updated with 
+the following years’ load forecast. Since 2023, the load forecast has been increasing. 
+PJM's 2023 forecast assumed a compounded annual growth rate of 0.4-0.8%.
+72
+ The 2024 
+forecast doubled to 1.6-1.9%.
+73
+ The 2025 forecast nearly doubled again, reaching 3.1-
+3.8%.
+74
+ The 2026 forecast ranges from 3.6% to 4.0% over the next decade.
+75
+ Notably, the 
+near-term forecast through 2032 is lower than the 2025 estimate because PJM 
+tightened its treatment of large-load adjustment requests: near-term projects now 
+require firm commitment.  PJM's witness, Donald Bielak, testified that forecasted load 
+growth was "unprecedented and could not have been foreseen as recently as a year 
+ago."
+76
+ Despite uncertainties about the number and timing of shortfalls, PJM's 
+conclusion is that load growth "outstrips installed Capacity,"
+77
+ and the planning 
+reserve margin for resource adequacy would fall in the near term, as early as 2026 
+under a low-supply-entry scenario and by 2028 under a high-entry scenario.
+78
+ 
+Utility affirmation and the clean-energy sector's skepticism. With forecasting 
+uncertainties acknowledged generally, actors in the clean energy sectors challenged 
+the specific figures and, consequently, the necessity of rationing policies.  The Clean 
+Energy Association called the projection one that "relies largely on conjecture and 
+speculation," adding that "PJM previously missed badly on load forecasts, and there is 
+no sign it has corrected such inaccuracies."
+79
+ The association similarly dismissed the 40 
+GW retirement figure [an estimate from the Four Rs report] as a "speculative 
+ 
+72
+ PJM Resource Adequacy Planning Department, 2023 Load Forecast Report (2023). 
+73
+ PJM Resource Adequacy Planning Department, 2024 Load Forecast Report, PJM Resource Adequacy Planning 
+Department (2024). 
+74
+ PJM Resource Adequacy Planning Department, 2025 Load Forecast Report (2025). 
+75
+ PJM Resource Adequacy Planning Department, 2026 Load Forecast Report (2026). 
+76
+ Donnie Bielak, “Reliability Resource Initiative MRC Update,” November 7, 2024, https://www.pjm.com/-
+/media/DotCom/committees-groups/committees/mrc/2024/20241107-special/item-04---reliability-resource-
+initiative---presentation.ashx. 
+77
+ PJM Interconnection, L.L.C., Tariff Revisions for Reliability Resource Initiative. 
+78
+ PJM Interconnection, L.L.C., Energy Transition in PJM: Resource Retirements, Replacements & Risks (2023). 
+79
+ The Clean Energy Associations, Protest of The Clean Energy Associations, Docket No.ER25-712 (2025). 
+
+ 27 
+assertion,"
+80
+ noting that policy directives are often indeterminate and that retirement 
+decisions can be reversed when higher prices make capital investment economically 
+attractive. Citing NERC's Long-Term Reliability Assessment, the American Council on 
+Renewable Energy (ACORE) argued in its protest that PJM would not fall below the 
+Reference Margin Level until 2034.
+81
+ RWE Clean Energy LLC. suggested the potential 
+issue of double-counting, where data-center load might be recorded multiple times as 
+developers submitted projects to different utilities.
+82
+ 
+Environmental groups questioned the supply forecast and the lack of consideration of 
+alternative measures to meet demand. PJM had applied a single historical completion 
+rate across all projects in the queue, regardless of whether they had executed 
+interconnection agreements. Sierra Club and Appalachian Voices called this outdated: 
+"PJM's supply conditions have also changed since early 2023...PJM does, in fact, have 
+other means at its disposal for bringing new generation online to meet 2030 demand."
+83
+  
+Clean energy proposed alternative modeling. In an affidavit submitted with Invenergy 
+Renewables LLC 's protest, experts from the Rocky Mountain Institute pointed to gaps 
+in PJM's modeling that missed recent efforts to increase supply and several ongoing 
+policy reforms. PJM's projection had not accounted for Surplus Interconnection 
+Service, filed just before the RRI with an effective date of March 7, 2025; pending 
+generator-replacement rules allowing new resources to use existing grid headroom; 
+and broader enhancements to completion rates across the Fast Lane and Transition 
+Cycle. Once these were factored in, the experts concluded that "these results indicate 
+that the RRI is not the only option for averting a supply shortfall and in fact may not 
+be necessary."
+84
+ 
+MISO stacked reports for urgency. In response to forecasting critiques, Andrew 
+Witmeier, MISO's Director of Resource Utilization, attached Q&A-style testimony to 
+the revised second ERAS proposal citing six reports, both MISO and non-MISO, all 
+pointing to growing challenges in meeting state energy goals within the MISO 
+footprint. The 2024 MISO Regional Resource Assessment (RRA) projected a capacity 
+ 
+80
+ PJM Interconnection, LLC., Motion for Leave to Answer and Answer of PJM Interconnection, LLC, Docket 
+No.ER25-712 (2025). 
+81
+ The American Council on Renewable Energy, Protest of the American Council on Renewable Energy, Docket 
+No.ER25-712 (2025), https://acore.org/resources/acore-protest-of-pjm-reliability-resource-initiative/. 
+82
+ RWE clean energy, LLC, Protest of RWE Clean Energy, LLC, Docket No.ER25-712 (2025). 
+83
+ Sierra Club and Appalachian Voices, Protest of Sierra Club and Appalachian Voices, Docket No.ER25-712 (2025). 
+84
+ Invenergy Renewables LLC and Bottlebrush Storage LLC, Motion for Leave to Answer and Answer of Invenergy 
+Renewables LLC and Bottlebrush Storage LLC, Docket No.ER25-712 (2025). 
+
+ 28 
+shortfall of 17 GW per year for 20 years; The OMS-MISO survey, a joint annual exercise 
+between MISO and the Organization of MISO States that assesses anticipated 
+generating capacity over a five-year planning horizon, drew a 91% participation rate in 
+2025 and concluded that "[a]t least 3.1 GW of new resources are needed by summer 
+2026/27 to avoid a resource deficiency, with greater needs in future years." The 
+differing timescales and capacity figures rendered the need acute rather than precise. 
+"The concerns about Resource adequacy in the MISO footprint have only increased 
+after publication of these reports,"
+85
+ Witmeier added. 
+State officials affirmed the urgency through conditions rather than numbers. 
+Louisiana Governor Jeff Landry described "multiple drivers of urgency, including 
+unprecedented load growth," citing "[e]conomic development in MISO South, new 
+large load additions (such as Meta's new data center to be built in north Louisiana and 
+the Hyundai steel facility in south Louisiana)."
+86
+ Governors of Missouri and Indiana 
+echoed a similar emphasis on unprecedented load growth.
+87
+ Transmission owners 
+reinforced the same picture. Big Rivers Electric Corporation, in comments filed in 
+support, stressed that load growth, retirements, and more clean energy "have 
+increasingly resulted in resource adequacy and reliability concerns and are 
+contributing to a complex policy landscape."
+88
+ 
+Clean energy actors questioned reliability, timing, and precision. Public Interest 
+Organizations pointed out that the NERC report had once been corrected from high 
+risk to elevated risk, showing the uncertainties behind the numbers. From the same 
+OMS-MISO survey report, the Clean Energy Association extracted the opposite 
+implication in its protest: that "queue and market reforms, improved resource 
+deployment timelines and other initiatives will help maintain resource adequacy 
+through 2031" and that "replacement and surplus queue projects will mitigate the 
+impact of retirements by using existing interconnection service, supplying ~25% of 
+new capacity additions."
+89
+ 
+ 
+85
+ Midcontinent Independent System Operator, Inc., Revisions to the Open Access Transmission, Energy and 
+Operating Reserve Tariff Expedited Resource Addition Study Filing. 
+86
+ Midcontinent Independent System Operator, Inc., Motion for Leave to Answer and Answer to the Comments and 
+Protests, Docket No.ER25-2454-000 (2025). 
+87
+ Braun, Mike, Support for Expedited Resource Addition Study (ERAS) Proposal, Docket No.ER25-2454 (2025), 
+https://elibrary.ferc.gov/eLibrary/. 
+88
+ NextEra Energy Resources, LLC, Motion to Intervene and Protest of  NextEra Energy Resources, LLC, Docket 
+No.ER25-2454-000 (2025), https://elibrary.ferc.gov/eLibrary/. 
+89
+ The Clean Energy Associations, Protest of The Clean Energy Associations. 
+
+ 29 
+Protesters also pointed to overlooked supply-side potential. Clean Grid Alliance noted 
+that resources with newly signed Generator Interconnection Agreements were not 
+counted in resource-adequacy measurement, and that the growing potential of storage 
+since the COVID pandemic had been overlooked.
+90
+ NextEra Energy Resources 
+submitted a Brattle Group analysis indicating that pending requests in the Definitive 
+Planning Phase (MISO's current queue) "were likely sufficient to maintain reliability" if 
+MISO "focused on processing them promptly" rather than "creating a parallel queue."
+91
+ 
+Uncertainty over cost shifting 
+Because the two rationing policies operated as different mechanisms from the 
+standard queue, their impact on existing projects was uncertain, and the scale of that 
+impact was heavily disputed by developers and interconnection customers. The 
+technical record produced a paradox. Both PJM's joint-study approach and MISO's 
+separate-study approach were defended by the proposing RTO as protective of the 
+existing queue and attacked by protesters as harmful to it. Each side cited engineering 
+expertise and produced quantified results, yet the conclusions ran in opposite 
+directions. Hess further noted that the concrete modeling details in ERAS were not 
+specified in the Tariff and had only surfaced in stakeholder meetings before the FERC 
+filing. 
+PJM saw a limited cost-shifting impact. RRI is a one-time addition of 51 projects to the 
+ongoing study cycle (Transition Cycle 2), where they will be studied in clusters 
+alongside existing projects that applied before September 30, 2021. PJM reasoned that 
+a 50-project cap would not delay Transition Cycle 2 and would have a limited impact 
+on existing projects, since RRI is designed to select projects that are easier to study, 
+thereby reducing study delays. As for network upgrade costs, PJM contended the 
+impact on existing projects would be limited and potentially favorable: RRI projects 
+are less likely to cause reliability violations, and therefore less likely to require 
+network upgrades in the first place. PJM further anticipated that RRI could 
+"contribute to the need for multiple network upgrades already needed for Transition 
+Cycle 2, thereby spreading the cost allocation for such upgrades more broadly and 
+relieving the legacy projects from some of the responsibility."
+92
+ At the time of filing, 
+ 
+90
+ Clean Grid Alliance, Protest of Clean Grid Alliance, Docket No.ER25-2454-000 (2025). 
+91
+ NextEra Energy Resources, LLC, Motion to Intervene and Protest of  NextEra Energy Resources, LLC. 
+92
+ PJM Interconnection, L.L.C., Tariff Revisions for Reliability Resource Initiative. 
+
+ 30 
+cycle composition had not been decided, and PJM maintained it was "speculative to 
+assume that the RRI process will have an effect, much less a negative effect, on legacy 
+projects." Without detailed modeling and RRI implementation results, the change in 
+cost sharing remained uncertain. 
+Developers disputed RRI's cost impact. The Keystone Energy Efficiency Alliance and 
+the Energy Efficiency Alliance of New Jersey jointly protested that RRI "jeopardizes 
+the viability of existing late-stage TC2 projects that have adhered to PJM Tariff 
+requirements, placing them at substantial risk of delay or cancellation."
+93
+ RWE Clean 
+Energy warned that its 16 projects in Transition Cycle 2 could lose economic viability 
+as roughly "10 GWs of new generation" from RRI gets "queue-jumped" ahead of them, 
+with potential losses of at least $2.2 million in forfeited deposits if costs forced 
+withdrawal.
+94
+ Invenergy Renewables submitted modeling estimating "over $8 billion in 
+additional network upgrade costs caused by adding 20 GWs of RRI projects," in an 
+affidavit from an experienced industry professional.
+95
+ 
+MISO saw cost isolation in ERAS through separate queue. ERAS runs quarterly from 
+2025 through its 2028 sunset, processing up to 10 projects per quarter and 68 in total, 
+each studied individually. A $100,000 application fee from ERAS applicants funds the 
+additional work, including improved study tools and new staff, so that "no resource or 
+staff time will be diverted from the Definitive Planning Phases (DPP, MISO's standard 
+queue) to ERAS or vice versa." The quarterly cap also gives MISO room to manage 
+coordination. To prevent the two tracks from competing for the same grid capacity, 
+MISO runs ERAS and DPP studies on the same underlying model of the transmission 
+system (the MTEP model): "Any headroom used by an ERAS interconnection request is 
+not deducted from the DPP model, as ERAS interconnection request will not be 
+included in ongoing DPP projects."
+96
+ MISO acknowledged a risk in studying the same 
+physical grid through two separate processes, namely that transmission lines could 
+end up oversubscribed, with more projects assigned to them than they can carry. Its 
+ 
+93
+ the Keystone Energy Efficiency Alliance and the Energy Efficiency Alliance of New Jersey, Motion to Intervene 
+Out-of-Time and Comments on Behalf of  Keystone Energy Efficiency Alliance and the Energy Efficiency  Alliance of 
+New Jersey, Docket No.ER25-712 (2025). 
+94
+ RWE clean energy, LLC, Protest of RWE Clean Energy, LLC. 
+95
+ Invenergy Renewables LLC and Bottlebrush Storage LLC, Motion for Leave to Answer and Answer of Invenergy 
+Renewables LLC and Bottlebrush Storage LLC. 
+96
+ Midcontinent Independent System Operator, Inc., Motion for Leave to Answer and Answer to the Comments and 
+Protests. 
+
+ 31 
+stated solution: "any transmission issues identified by reconciling the cases will... be 
+addressed through the existing MTEP process," with costs typically allocated to load.  
+ERAS faced the same cost-shift challenge despite its separate-queue design. The MISO 
+Independent Power Producers, a coalition including NextEra, Invenergy, EDF, and 
+Clearway, argued that ERAS projects "will necessarily take up transmission capacity 
+that would be utilized by existing projects in queue by virtue of the fact that ERAS 
+projects are jumping ahead of DPP projects."
+97
+ Warren Hess, a former MISO planning 
+engineer, testified in the Clean Energy Association's protest that "as much as 50% of 
+Network Upgrades that ERAS projects may cause will go undetected," with the costs 
+shifting to future projects that share the same parts of the network and end up paying 
+for upgrades they did not trigger. NextEra Energy Resources' protest compared the 
+two study processes for the same 12 projects: under DPP, they would be assigned 
+$1,792 million in network upgrade costs, while under ERAS, they would be assigned 
+only $8.68 million.
+98
+ 
+Uncertainty over viability criteria 
+Rationing policies established selection criteria that filter out projects with higher 
+capacity contributions and a higher likelihood of quick construction. However, actors 
+questioned the criteria's ability to select the most viable projects among diverse 
+possibilities.  
+PJM defined shovel-ready. RRI is positioned to "enable 'shovel-ready' projects 
+addressing near-term resource adequacy and/or reliability needs to be completed in a 
+short period of time." PJM defined "shovel-ready" as resources that, first, "are ready to 
+commence and complete construction quickly" and, second, "would offer sizeable 
+amounts of Unforced Capacity with higher ELCC ratings."
+99
+ PJM's scoring system 
+reflects these two priorities: 35 points for commercial viability and 65 points for 
+market impact. Commercial viability covers commercial operation date, project 
+support, RRI uprates, and headroom. Market impact covers unforced capacity, 
+Effective Load Carrying Capability (ELCC, which measures an individual resource's 
+contribution to capacity by discounting nameplate capacity, especially for 
+renewables), and location. Through this balanced rating, PJM sees RRI as seeking "a 
+ 
+97
+ MISO Independent Power Producers, Protest of the Miso Independent Power Producers, Docket No.ER25-2454-
+000 (2025). 
+98
+ NextEra Energy Resources, LLC, Motion to Intervene and Protest of NextEra Energy Resources, LLC. 
+99
+ PJM Interconnection, L.L.C., Tariff Revisions for Reliability Resource Initiative. 
+
+ 32 
+diverse set of resources with differing operational characteristics and different fuel 
+types." 
+Critics doubted that RRI's scoring rules could select viable projects. The Natural 
+Resources Defense Council, among the environmental groups protesting RRI, called 
+the commercial-readiness criteria "not robust."
+100
+ The most important attribute, the 
+commercial operation date (when plants can come online), weighs only 10 points, and 
+"non-viable projects could be selected." Power suppliers raised the same concern with 
+concrete numbers. AES Corporation gave an illustrative example in its protest: 
+assuming the same location, a 1,000 MW nuclear uprate with no permits, an expected 
+operation date of September 2030, and no available headroom would receive a high 
+market-impact score but a lower commercial-viability score, totaling 85 points; a 1,000 
+MW four-hour storage facility with all approved permits, available headroom, and a 
+2028 in-service date would score only 70.75 points, because its lower capacity value 
+reduces its market-impact score. The project that could come online sooner would 
+rank lower under RRI's scoring. And, AES Corporation argued, plants entering service 
+in 2030 would not address the near-term need.
+101
+ 
+The weighting drew objections even from RRI's supporters. American Municipal Power 
+supported the concept behind RRI but argued that "eligibility criteria are 
+inappropriately weighted toward UCAP and ELCC over in-service date viability and 
+location,"
+102
+ and proposed location and timing as screening criteria rather than minor 
+scoring factors. The Independent Market Monitor warned that under the proposed 
+scoring, a project could score poorly on commercial viability but still be selected if it 
+had high-capacity values. The IMM's position was that no project should be approved 
+unless it first met strict thresholds for location, operational characteristics, and 
+commercial viability.
+103
+ 
+Beyond the weighting itself, some protesters argued the scoring could not capture 
+what was really holding projects back. Roughly 38,000 MW of resources had already 
+cleared PJM's interconnection queue but remained unbuilt, held up by financing, 
+ 
+100
+ Natural Resources Defense Council, Protest of Natural Resources Defense Council to Reliability Resource 
+Initiative, Docket No.ER25-712 (2025), https://elibrary.ferc.gov/eLibrary/. 
+101
+ the AES Corporation, Protest of AES Corporation, Docket No.ER25-712 (2025). 
+102
+ American Municipal Power, Inc., Comments of American Municipal Power, Inc., Docket No.ER25-712 (2025), 
+https://elibrary.ferc.gov/eLibrary/. 
+103
+ the Independent Market Monitor, Comments of the Independent Market Monitor for PJM, Docket No.ER25-712 
+(2025). 
+
+ 33 
+supply chain, and siting and permitting issues.
+104
+ "Interconnection process reform is 
+proceeding, but hurdles remain for many projects outside of our process," said Stu 
+Bresler, Executive Vice President for Market Services and Strategy at PJM. RRI 
+allocates only 10 of 100 points to projects demonstrating financing, permitting, 
+equipment, and construction advantages. The Clean Energy Association and Keystone 
+EEA asked whether anything was "distinct or unique" about RRI projects that would let 
+them bypass the supply chain, permitting, or financing problems facing the rest of the 
+industry.
+105
+ In the protesters' view, insufficient weighting and discretion in 
+implementation would not do the work of selecting viable projects. 
+MISO defined "shovel-ready" through eligibility gates. ERAS required a commercial 
+operation date no more than three years from submission, with a three-year grace 
+period; location within a local resource zone with an identified need; 100% site control; 
+and an executed off-take agreement, or a self-supply acknowledgment for utilities. 
+The requested interconnection service cannot exceed 150% of the maximum capacity 
+output. Most importantly, projects must obtain a resource-need certification from the 
+Relevant Electric Retail Regulatory Authority (RERRA), which includes state 
+commissions, the "city council for a municipal utility," and the "governing board [of] a 
+cooperative utility."
+ 106
+ MISO described the design intent as deferential to states: "MISO 
+views the ERAS process as simply a tool that states may utilize to address their 
+resource adequacy and/or reliability needs, even the retail choice states."
+107
+  
+Clean energy actors pushed back on the grace period and the state certification. The 
+Coalition of Midwest Power Producers argued the proposal mischaracterized the 
+timeline: a project submitted in 2028 with a three-year COD requirement plus a three-
+year grace period could push commercial operation to 2035, well after MISO's 
+forecasted shortfall window of 2027 to 2030.
+108
+ Clean Grid Alliance pointed to the same 
+inconsistency: "Either the ERAS project is not speculative and will come online as 
+needed to meet the claimed adequacy shortfall, or it should not be allowed in the first 
+ 
+104
+ “Successful Interconnection Reforms, Other PJM Initiatives Seek To Maximize Electricity Supplies | PJM Inside 
+Lines,” accessed March 24, 2026, https://insidelines.pjm.com/connected/. 
+105
+ the Keystone Energy Efficiency Alliance and the Energy Efficiency Alliance of New Jersey, Motion to Intervene 
+Out-of-Time and Comments on Behalf of  Keystone Energy Efficiency Alliance and the Energy Efficiency  Alliance of 
+New Jersey; The Clean Energy Associations, Protest of The Clean Energy Associations. 
+106
+ Midcontinent Independent System Operator, Inc., Revisions to the Open Access Transmission, Energy and 
+Operating Reserve Tariff Expedited Resource Addition Study Filing. 
+107 
+Midcontinent Independent System Operator, Inc., Revisions to the Open Access Transmission, Energy and 
+Operating Reserve Tariff Expedited Resource Addition Study Filing. 
+108
+ Coalition of Midwest Power Producers, Inc., Limited Protest of COMPP on Miso’s Refiled Expeditated Resource 
+Addition Study, Docket No.ER25-2454-000 (2025). 
+
+ 34 
+instance." Beyond clean energy actors, the Michigan Public Service Commission raised 
+the same doubt, calling the three-year-on-three-year structure too long and noting it 
+"belies the notion of the projects being 'shovel ready.'"
+109
+ Michigan proposed 
+eliminating the grace period; MISO declined to reduce it to zero or one year.
+110
+ 
+MISO presented state certification as a tool for managing the uncertainties outside the 
+interconnection process, arguing that state authorities, through certification, can 
+confirm a project is viable, buildable on schedule, and permitted, screening out 
+speculative projects. Public Interest Organizations and Invenergy responded that 
+MISO's requirements "do not ensure that 'shovel-ready' interconnection requests enter 
+the ERAS process, such as evidence that major equipment or project permits have been 
+sought or secured."
+111
+ MISO IPPs noted on the discretion: "lack of any objective tariff 
+criteria ensures that these decisions will be highly subjective," and the IPPs argued 
+that "inconsistent and arbitrary outcomes between jurisdictions are assured."
+112
+ 
+Advanced Energy United raised a jurisdictional objection, warning that MISO was 
+effectively "outsourcing" generator-interconnection selection, a Commission-
+exclusive jurisdiction, to non-jurisdictional state authorities. Clean Wisconsin pointed 
+to the existing record: over 50,000 megawatts of projects with signed interconnection 
+agreements remain incomplete in MISO due to local permitting, equipment sourcing, 
+and labor shortages, and "rather than causing ERAS applicants to show how they can 
+succeed where other projects have encountered challenges, MISO will simply accept 
+the same information as in a typical DPP application."
+113
+ 
+Dissolving uncertainties for decision-making 
+FERC found the policies reasonable in principle, deferring the specifics to the RTOs. 
+The uncertainties of forecasting reliability needs were broadly acknowledged by 
+stakeholders. MISO addressed them directly in its answer: 
+“The challenges posed by this situation are broadly recognized and do not depend 
+on the specific findings of only one study. A challenging aspect of spot load 
+ 
+109
+ Clean Grid Alliance, Protest of Clean Grid Alliance. 
+110
+ Michigan Public Service Commission, Notice of Intervention and Limited Protest of the Michigan Public Service 
+Commission, Docket No.ER25-2454 (2025). 
+111
+ Public Interest Organizations and Coalition of Midwest Power Producers, Inc., Protest of Public Interest 
+Organizations, Docket No.ER25-2454-000 (2025). 
+112
+ MISO Independent Power Producers, Protest of the Miso Independent Power Producers, Docket No.ER25-2454-
+000 (2025). 
+113
+ Clean Wisconsin, Protest of Clean Wisconsin, Docket No.ER25-2454-000 (2025), 
+https://elibrary.ferc.gov/eLibrary/. 
+
+ 35 
+growth is the inability to predict when or where they will pop up. It is important to 
+note too that MISO is not trying to solve a problem with consequences being felt 
+today but is proposing a process that will allow it to address resource adequacy 
+and reliability problems that will occur in the future to prevent foreseeable 
+shortfalls.”
+114
+ 
+The management of this uncertainty followed established practice. "Historically, FERC 
+has been careful not to second-guess the reliability determinations made by RTOs," 
+noted an affidavit from the Electric Power Supply Association in support of RRI. The 
+Commission ruled that PJM has the authority to manage its queue to meet projected 
+near-term resource adequacy needs, citing PJM's responsibility to "ensure that there 
+are enough idle generators connected to the transmission grid for the system to 
+function at peak load," and reaffirming that it accords "reliability-related discretion to 
+[ISOs], and [will] not second-guess their decisions in that regard."
+ 115
+ On ERAS, the 
+Commission concluded: "While forecasting future resource adequacy needs 
+necessarily involves uncertainty, we find that it is reasonable for MISO to act in 
+recognition of the aforementioned reports.”
+116
+ 
+FERC accepted the uncertainty with capping the policies as temporary, one-time 
+measures. The potential harm remained unknown, as the Commission acknowledged 
+in its order: 
+"We also agree with PJM that there is no way to definitively know in advance the 
+cost allocation impact from the RRI projects... Furthermore, as PJM has argued, 
+efforts to definitively ascertain and allocate the exact RRI cost allocation impacts 
+would take an additional nine months, which would undermine the purpose of the 
+RRI reforms."
+117
+ 
+Though the impact is partially unknown, FERC concluded that the RRI-induced cost 
+shifts raised by protesters were "speculative." It declined to engage with cost shifting 
+in ERAS for similar reasons, treating it as a structural feature of the system: 
+ 
+114
+ David Rosner et al., 192 FERC ¶ 61,064 UNITED STATES OF AMERICA FEDERAL ENERGY REGULATORY 
+COMMISSION, n.d. 
+115
+ Phillips et al., 190 FERC ¶ 61,084 UNITED STATES OF AMERICA FEDERAL ENERGY REGULATORY COMMISSION. 
+116
+ David Rosner and Lindsay S. See, 191 FERC ¶ 61,131 UNITED STATES OF AMERICA FEDERAL ENERGY 
+REGULATORY COMMISSION, n.d. 
+117
+ Phillips et al., 190 FERC ¶ 61,084 UNITED STATES OF AMERICA FEDERAL ENERGY REGULATORY COMMISSION. 
+
+ 36 
+interconnection customers possess "no legal rights to a given system topology," and 
+lower-queued projects frequently face changing costs under any queue design. 
+Beyond the order, commissioners shared more concerns about dismissing the cost-
+shifting uncertainty. Commissioners Phillips and Rosner concurred in the RRI filing: 
+"This is not a request we take lightly. ... threatens to seriously undermine 
+confidence in Commission-jurisdictional electricity markets. Nonetheless, we 
+believe that the Commission must confront the real and consequential harm that 
+failing to act could have on consumers in the PJM region."
+118
+ 
+In their view, the consequences of failing to meet reliability needs ultimately 
+outweighed the potential harm, given the bounded design of "a one-time stop gap 
+measure" and PJM's pursuit of "additional reforms to ensure that PJM never needs a 
+mechanism like RRI ever again." Commissioner Chang disagreed with that trade-off. 
+She was not persuaded that PJM's proposal was "adequately tailored" to its stated 
+goals, particularly given the harms it would likely inflict on other interconnection 
+customers, and did not find those harms "mitigated to the extent possible." She drew a 
+line between acceptable and unacceptable departures from standard interconnection 
+practice: departures for surplus interconnection service or retirement-facility 
+replacement, she wrote, "may warrant a departure from otherwise applicable open 
+access requirements" because of clear efficiency gains. RRI, in her view, had not met 
+that bar. 
+FERC reviewed both designs under a 'just and reasonable' standard, asking whether 
+they were defensible rather than optimal. The commissioners acknowledged 
+uncertainty about whether the design would deliver shovel-ready resources. 
+Commissioners Phillips and Rosner, concurring, voiced reservations, concerned that 
+"PJM's proposal may not enable sufficient 'shovel-ready' resources to interconnect... 
+to prevent the resource adequacy crisis that motivated PJM to develop this proposal in 
+the first place." Commissioner Chang, in dissent, similarly questioned the heavy 
+weight on capacity size and its links to external delay: larger facilities would get 
+priority, but their greater complexity would likely delay development and 
+construction.
+ 
+ 
+118
+ Phillips et al., 190 FERC ¶ 61,084 UNITED STATES OF AMERICA FEDERAL ENERGY REGULATORY COMMISSION. 
+
+ 37 
+Despite this uncertainty, the Commission found PJM's scoring "reasonable" because 
+the higher weight on capacity size aligned with the goal of lowering the capacity 
+market price. Whether the weighting was optimal, FERC deferred to PJM: 
+"PJM does not need to establish that the proposed criteria are ideal weighting 
+criteria. Rather, PJM must simply establish that the proposed criteria represent a 
+just and reasonable approach. Because we find PJM's proposal appropriately 
+evaluates which resources will meet its near-term system needs, as discussed 
+below, we do not need to evaluate whether alternative scoring methods would be 
+reasonable than PJM's proposal."
+ 119 
+FERC described MISO's viability requirements as a "comprehensive package" that 
+would "deter speculative interconnection requests."
+120
+ It especially endorsed state 
+certification as a tool outside the interconnection process for managing permitting 
+uncertainties, finding it reasonable to rely on RERRA verification to identify projects 
+that could most readily meet regional needs. RERRAs, the Commission wrote, are 
+"obliged to serve the public interest in accordance with state law" and are "uniquely 
+positioned" to evaluate which projects can best meet their region's reliability needs. 
+Summary  
+The docket analysis finds that the contested uncertainties were rooted in complex 
+system issues beyond rationing policies. In the decision-making process under a 
+pressing timeline and the existing structure of RTO-FERC governance, uncertainties 
+are managed by deterring dominant coalitions and accepting temporary, suboptimal 
+measures rather than by further specification through sufficient engagement. 
+Uncertainties contested as system issues. Uncertainty over forecasting reflects not 
+only technical error but also broader governance challenges. On the demand side, 
+data-center load growth raised questions about how load requests are collected and 
+verified. Utilities may have incentives to treat prospective data centers as future load, 
+while limited coordination can allow the same request to be counted multiple times as 
+developers shop across service territories. On the supply side, RTO scenarios often 
+rely on historical trends, while clean energy researchers argued that ongoing policy 
+efforts, including surplus interconnection service, could add capacity that models 
+ 
+119
+ Phillips et al., 190 FERC ¶ 61,084 UNITED STATES OF AMERICA FEDERAL ENERGY REGULATORY COMMISSION. 
+120
+ Rosner et al., 192 FERC ¶ 61,064 UNITED STATES OF AMERICA FEDERAL ENERGY REGULATORY COMMISSION. 
+
+ 38 
+should capture. These disputes show that reliability forecasts depend on choices 
+about data collection, scenario assumptions, and the representation of uncertainty.  
+Uncertainty over cost shifting as a potential harm reflects structural problems in 
+existing cost-allocation methods. Network upgrade costs are studied serially or in 
+clusters, with assigned projects paying for upgrades that may also benefit later 
+generators. Because cost responsibility shifts with queue position, rationing policies 
+can redistribute costs whether they inject projects into an existing cycle, as in RRI, or 
+create a separate track, as in ERAS. These cost shifts are difficult to model within a 
+policy proceeding, making their distribution uncertain. This points to two suggestions: 
+more holistic transmission planning to address the free-rider problem over the long 
+term, and greater near-term transparency in models and studies to align expert 
+interpretation. The harm-benefit trade-off intensified the dispute: system-level 
+benefits remained uncertain, project-level benefits accrued to fast-tracked projects, 
+and potential harms fell on projects already positioned in the existing queue. This 
+uneven distribution of gains and losses helps explain why queue-rationing policies 
+became controversial. 
+Uncertainty over outcomes concerns whether selection criteria could identify projects 
+best positioned to meet reliability needs. Projects were evaluated through indicators 
+of capacity contribution or viability, but these indicators could not fully account for 
+external factors that might delay or prevent completion. The criteria relied on 
+capacity-accreditation measures such as Unforced Capacity and Effective Load 
+Carrying Capability, whose application across resource types remains contested. They 
+also involved institutional design: ERAS’s state regulatory notification requirement 
+introduced state judgment into interconnection governance, but without fully 
+resolving how need, suitability, and project priority should be determined. This 
+suggests that selection criteria require both updated technical measures and clearer 
+institutional roles. 
+Uncertainties are resolved through venue rules under reliability urgency. FERC 
+ultimately resolved these uncertainties under the existing rules. The Commission 
+deferred technical specifics to the RTOs, accepting forecasting uncertainties and 
+criteria design as within RTO discretion. Reliability urgency pressed the timeline 
+against further inquiry: there was no time for detailed modeling to reduce forecast 
+uncertainty, no time to wait for more accurate forecasts as the situation demanded 
+
+ 39 
+immediate action, and no time for back-and-forth on what would be optimal rather 
+than what had been presented. 
+ 
+Interview: uncertainties beyond the formal debate 
+Docket analysis shows how actors contested uncertainty about reliability needs, 
+potential harm, and possible outcomes. Interviews with clean energy advocates and 
+experts reveal additional uncertainties that largely remained outside the formal 
+debate. At FERC, the reliability need was debated mainly in terms of forecasting 
+accuracy, while interviewees questioned whether all forms of demand should be 
+incorporated into the concept of reliability. Potential harm was discussed mainly in 
+relation to queued projects, while interviewees emphasized the broader risk of 
+repeated procedural departures under reliability pressure. Possible outcomes were 
+debated through project-viability criteria, while interviewees raised the 
+environmental consequences of the resource mix those criteria could advance. The 
+interviews, therefore, show that the formal debate narrowed which uncertainties were 
+institutionally visible. 
+Hyperscalers as uncertain reliability need 
+Some interviewees suspect that the urgent demand for increased data center capacity, 
+along with utilities’ lobbying within RTOs, was a major force behind the advancement 
+of queue-rationing policies.
+121
+ Data centers tend to be much less sensitive to price 
+changes than standard industrial loads, fostering a "rush mentality"
+122
+ focused on 
+speeding up interconnection processes. Additionally, utilities appear motivated to 
+attract large customers.
+123
+ Large tech companies and data centers possess the financial 
+resources and political influence to advocate for rapid policy changes. As an attorney 
+at Earthjustice noted:  
+“The interconnection process has consistently been a barrier...It’s only now that 
+we see this need from data centers and big tech that we’re seeing all these new 
+proposals to fix the interconnection process, at least for certain resources, for 
+ 
+121
+ “Interview #1,” (Virtual meeting room), February 2026; “Interview #3”; “Interview #6,” (Virtual meeting room), 
+February 2026; “Interview #11,” (Virtual meeting room), February 2026. 
+122
+ “Interview #17.” 
+123
+ “Interview #1.” 
+
+ 40 
+certain types of customers... I think that there’s just something that does not pass 
+the sniff test with these interconnections fast-tracks when you zoom out.”
+124
+ 
+Similarly, A clean energy analyst commented:  
+“I think that [ERAS] is a symptom of wanting to have something in place so that 
+you can get these new load additions online as soon as possible. This speed-to-
+power thing for data center developers, specifically industry pressure.”
+125
+  
+It was unknown whether RRI and ERAS were explicitly mobilized to meet the needs of 
+hyperscale data centers. But interviews commonly indicate that data center load 
+growth reduced resource adequacy, prompting RTOs to act quickly by rationing the 
+interconnection queue.  
+However, they question whether the reliability scope should include data centers, in 
+addition to other loads. RWE Clean Energy stated in their protest, “If there is a new 
+increase in data center energy needs, that is not a reliability problem,” indicating that 
+data centers can be connected later when the market is ready. Although this question 
+of the scope of reliability appeared only briefly in the docket comments, it echoed 
+views expressed more fully in interviews. As a policy analyst at a clean energy trade 
+association put it, “Speed to power is not a reliability issue but a business problem.”
+126
+ 
+A clean energy advocate in a MISO state said: 
+“Utilities sometimes have a statutory obligation to serve... it feels like we are 
+bending over backwards to get the energy for these sometimes speculative 
+projects as fast as possible, and throwing the reliable, affordable, sustainable 
+goals out the window for that...” 
+Interviewees cautioned against directly treating hyperscale data-center demand as a 
+reliability problem. In their view, policymakers should scrutinize hyperscale load 
+requirements more carefully rather than rushing to prioritize large-capacity additions 
+regardless of cost. 
+Recurring stopgaps as uncertain harm 
+Aside from the legal debate over whether rationing policies are exceptions to the 
+open-access principle, these measures are described as temporary and one-off to 
+ 
+124
+ “Interview #6.” 
+125
+ “Interview #3.” 
+126
+ “Interview #13,” (Virtual meeting room), February 2026. 
+
+ 41 
+justify deviations from standard practice. However, interviewees doubt this framing 
+will last, fearing that rationing may not remain an exception but instead become the 
+norm, replacing the ongoing reforms aimed at broader interconnection. 
+Five legal professionals raised a version of the "exception swallows the rule" problem: 
+rather than prompting a comprehensive fix, rationing policies may proliferate into a 
+series of narrow, surgical workarounds.
+127
+ An experienced attorney at a trade 
+association doubted the one-time framing would hold, observing that “the more that 
+the load growth figures keep looking really high, and the more that grid operators 
+believe that FERC is going to approve any expedited interconnection approach that 
+they put forward, it certainly runs the risk of it coming back again.”
+128
+ 
+PJM's Expedited Interconnection Track (EIT), filed with FERC in February 2026, 
+illustrates this concern. Similar in design to ERAS, EIT would use a serial study process 
+to review projects on a first-come, first-served basis at regular intervals, with a 
+minimum Unforced Capacity of 250 MW. “  One-offs keep coming,” a policy analyst 
+commented on EIT, pointing to a joint letter from New Jersey Governor Mikie Sherrill 
+and Illinois Governor JB Pritzker to PJM that signaled states' emerging concerns about 
+rationing policies: 
+“Setting a minimum eligibility requirement of 250 MW Unforced Capacity does not 
+align with the intended goal of fixing the near-term capacity crisis and limits the 
+ability of the EIT to relieve resource adequacy concerns, to improve affordability, 
+and to support economic development.”
+129
+ 
+The deeper concern is that this pattern undermines FERC's broader 2023 effort to 
+modernize interconnection. Another attorney described rationing policies as a 
+“piecemeal patchwork” that undermines ongoing reforms designed to study small 
+resources in clusters — reforms intended to improve efficiency and accommodate the 
+paradigm shift in the resource mix. ERAS, in this view, “retrench[es] into studying 
+singular, large resources, one at a time.”
+130
+ 
+ 
+127
+ “Interview #2,” (Virtual meeting room), February 2026; “Interview #5,” (Virtual meeting room), February 2026; 
+“Interview #6”; “Interview #7,” (Virtual meeting room), February 2026; “Interview #12,” (Virtual meeting room), 
+February 2026. 
+128
+ “Interview #12.” 
+129
+  Illinois Office of the Governor and New Jersey Office of the Governor, “Letter Re: Proposed Expedited 
+Interconnection Track Tariff,” February 17, 2026 
+130
+ “Interview #6.” 
+
+ 42 
+Environmental consequences as uncertain outcomes 
+The formal debate over outcome uncertainty focused on whether rationing criteria 
+could identify projects likely to deliver reliability benefits. Interviews raised a 
+different uncertainty that the docket largely excluded: the environmental 
+consequences of the resource mix those criteria were likely to advance. Several 
+interviewees expressed confidence that, in practice, the criteria would favor large gas 
+projects. One advocate said professionals can "read the tea leaves” and it's “very likely 
+that Louisiana will expect large-scale gas projects”.
+131
+ Similarly, a renewables 
+developer said simply, "We know those policies are not for us.”
+132
+ If rationed queues 
+are expected to advance primarily gas resources, then environmental and health 
+impacts become part of the policy’s likely outcomes, even if they are not treated as 
+central in the formal proceeding. As one analyst explained, the debate had been 
+narrowed in a way that excluded these impacts, leaving environmental organizations 
+to bring them back to the table.
+133
+ 
+These concerns also intersect with state clean energy goals. Many states in the PJM 
+and MISO regions have enacted clean energy targets. Virginia’s Clean Economy Act 
+requires Dominion Energy to deliver 100 percent clean electricity by 2045 and 
+Appalachian Power to do so by 2050. Illinois’s Climate and Equitable Jobs Act 
+establishes a state policy of achieving 100 percent clean energy by 2050 and phasing 
+out private gas-fired generation by 2045. Several interviewees questioned whether 
+rationing policies that advance anticipated gas generation would undermine these 
+targets. An attorney at the Southern Environmental Law Center working on Virginia 
+issues described data-center-driven load growth as pressuring the construction of 
+large fossil-fueled generators, which she characterized as “a threat to the targets set 
+by the state.”
+134
+ If a fast-track interconnection pathway preferentially advances gas 
+projects, she argued, interconnection outcomes will determine whether state clean 
+energy targets remain on track. An analyst working in the PJM region noted that the 
+gas projects selected through RRI, combined with continued development of rationing 
+pathways, raise concerns about state clean energy goals.
+135 
+ 
+ 
+131
+ “Interview #9,” (Virtual meeting room), February 2026. 
+132
+ “Interview #16,” (Virtual meeting room), February 2026. 
+133
+ “Interview #1.” 
+134
+ “Interview #7.” 
+135
+ “Interview #4.” 
+
+ 43 
+The consequences become more significant over the long term. Gas projects advanced 
+through current rationing policies may operate for 25 to 40 years, meaning that short-
+term reliability responses can commit the grid to fossil-fuel infrastructure for decades. 
+A policy analyst at the Southern Renewable Trade Association noted that if state and 
+federal grids adhere to clean energy targets, gas plants built today will not operate at 
+high-capacity factors over their economic lives. However, gas is what the market 
+currently demands, and political pressure to bring new load online quickly favors 
+building what can be built fastest. The long-term consequences are underprioritized 
+amid reliability pressures.  
+ 
+Rationed queues: uncertainties reflected in queue composition 
+RRI and ERAS both produced gas-heavy queues, in contrast to the standard 
+interconnection queues, where solar, wind, and storage dominate. The scale of gas in 
+the rationed queues is substantial relative to each region's existing gas capacity. In 
+PJM, existing installed gas capacity is 104.3 GW, while RRI includes 8.1 GW of gas 
+projects. In MISO, existing installed gas capacity is 81 GW, while ERAS includes 20.7 
+GW of gas projects.
+136
+ Although these rationing policies are bounded by sunset dates, 
+eligibility limits, and project caps, their effects could still be significant if the selected 
+projects are realized. 
+ERAS also shows how rationing criteria can shape not only resource type, but also 
+market structure and geography. Projects serving data centers account for nearly 43 
+percent of total ERAS capacity, while utility-sponsored projects account for 39 
+percent. Concentration is also high among interconnection customers: parent 
+companies of the top five customers account for 80.9 percent of projects. State-level 
+variation is also evident, since ERAS eligibility incorporates state preferences or 
+certifications into the selection process. Together, these patterns suggest that queue 
+rationing can produce a distinct queue composition, with implications for fuel mix, 
+customer concentration, and state clean energy goals. 
+ 
+136
+  Author’s calculation, data source: Lawrence Berkeley National Laboratory, “Queued Up”; Donnie Bielak, 
+“Reliability Resource Initiative Additional Summaries,” PJM Interconnection, February 2025, 
+https://insidelines.pjm.com/pjm-chooses-51-generation-resource-projects-to-address-near-term-electricity-
+demand-growth/; Midcontinent Independent System Operator, Inc., “ERAS Interconnection Requests,” March 
+2026, https://www.misoenergy.org/planning/resource-utilization/generator-interconnection/.  
+
+ 44 
+Gas dominates in the RRI queue  
+RRI selection results were published in February 2025. 97 projects applied; 51 were 
+selected, for a combined 11,793 MW, roughly one-third of the new capacity that 
+entered PJM's standard cluster queue before 2022, the last year before PJM paused 
+new queue entries. Among selected projects, gas accounted for 8.1 GW (69.2% of 
+selected capacity), battery for 19.3%, and nuclear for 11.7%. Over a decade-long 
+trajectory in PJM’s queued capacity, gas dominated PJM's queue through the mid-
+2010s. From roughly 2015 onward, the share of gas in new queue entries declined 
+steadily, and by 2020, new entries were predominantly solar, wind, and storage. RRI's 
+69% gas share is the first time since 2016 that gas has accounted for most of the queue 
+capacity. 
+ 
+Figure    1: Queued capacity fuel mix in PJM, standard queue (2010–2023) vs. RRI (2025). 
+Data source: Reliability Resource Initiative Summary, PJM Interconnection, LLC  ; Queued up, LBNL     
+ 
+Selection outcomes varied by resource type. The selection process shows disparities 
+across resource types. Of 53 gas projects that applied, 38 were selected, yielding a 66% 
+approval rate. Of 32 battery storage projects that applied, 5 were selected, as shown in 
+Figure 2.  
+ 
+
+ 45 
+ 
+Figure    2: Queued projects by fuel mix in selected vs. unselected RRI process 
+Data source: Reliability Resource Initiative Summary, PJM Interconnection, LLC 
+ 
+Gas dominates in the ERAS queue  
+ERAS took effect in August 2025 and is planned to run quarterly for three years, with 
+each cycle capped at 10 projects. Because ERAS is eligibility-based, projects will be 
+studied in the order eligibility is secured. Applications flooded in as soon as the 
+application window opened. Within the first minute, 36 projects applied, filling the 
+first two study cycles. By the end of March 2026, 61 projects had applied. The first 
+cycle has completed its study, and post-GIA construction has yet to start. 8 projects 
+withdrew.  
+Gas accounts for 20.7 GW of ERAS queued capacity, or 73% of the total. Storage is 
+12.9%, solar 8.9%, wind 3.3%, and nuclear 2.3%. This composition departs from the 
+trajectory of MISO's standard cluster queue, where gas share in new entries has 
+declined since the mid-2010s and recent annual cohorts have been predominantly 
+solar, wind, and storage. 
+The scale of individual ERAS gas projects is also distinct from the standard queue. 
+Among the 30 gas projects in ERAS, 8 exceed 1,000 MW. For comparison, MISO's 
+standard cluster queue contained 26 gas projects above 1,000 MW across the 24 years 
+
+ 46 
+from 2000 through 2024. ERAS has produced roughly one-third of that 24-year count in 
+its first seven months. 
+ 
+Figure    3: Queued capacity fuel mix in MISO, standard queue (2010–2024) vs. ERAS (2025).
+ 
+Data source: ERAS Interconnection Request, Midcontinent Independent System Operator, Inc.; Queued up, LBNL  
+ 
+Developer, load type and state concentration in ERAS 
+The five largest interconnection customers in ERAS submitted a total of 34 projects, 
+which make up 80.9% of the overall queued capacity. Entergy Corporation was the top 
+filer, submitting projects via its Louisiana, Mississippi, and Texas subsidiaries. They 
+were followed by NiSource, Alliant Energy, NextEra Energy, and Invenergy. Among 
+these five, three are vertically integrated load-serving entities, while two are 
+independent developers. 
+ 
+Table    2: Projects by top 5 parent companies of interconnection customers in ERAS queue 
+Data source: ERAS Interconnection Request, Midcontinent Independent System Operator, Inc 
+
+ 47 
+ 
+18 of 61 ERAS projects involve a utility interconnecting to its own transmission system. 
+These projects represent 39% of queued capacity. Under the open-access framework 
+that governs U.S. bulk power interconnection, the interconnection customer and the 
+transmission owner are typically arm's-length parties; the study process is designed to 
+enforce nondiscriminatory access. When the two are the same corporate entity, cost 
+allocation, scheduling, and study assumptions become decisions made within a single 
+firm. This practice is permitted. Its prevalence in ERAS, at 30% of project count and 
+39% of capacity, is higher than in MISO's standard cluster queue. Entergy's subsidiaries 
+alone account for 9 self-interconnecting projects totaling 8,660 MW. All are gas-fired. 
+Individual unit sizes range from 377 MW to 1,640 MW. The largest single 
+interconnection service request in ERAS, at over 2,000 MW, comes from Northern 
+Indiana Public Service Company (NIPSCO). The project is two combined-cycle gas 
+turbines at NIPSCO's Schahfer site. Schahfer's coal-fired units had been scheduled for 
+retirement in 2025. In 2025, the U.S. Department of Energy ordered the coal units to 
+continue operating through the end of the year. NIPSCO's 2024 Integrated Resource 
+Plan discloses 1,285 MW of new combined-cycle gas additions for 2025 to 2029, planned 
+only if new hyperscaler data center load is contracted.
+137
+  
+ 
+ 
+Table    3: Utility projects in ERAS queue 
+Note: Utility projects identified as interconnection customer and transmission owner are identical 
+Data source: ERAS Interconnection Request, Midcontinent Independent System Operator, Inc 
+ 
+In the nonconfidential summary in the ERAS queue, 13 of 57 project summaries (23%) 
+explicitly cited data centers as resource needs, and 9 of those mentioned “hyperscale”. 
+ 
+137
+ Northern Indiana Public Service Company LLC, Northern Indiana Public Service Company LLC  2024 Integrated 
+Resource Plan (2024), https://www.in.gov/iurc/files/NIPSCO-2024-Integrated-Resource-Plan-Document.pdf. 
+
+ 48 
+All data center projects totaled 12,135 MW and accounted for about 43% of total 
+capacity, with a heavy concentration in Indiana (7 projects), Louisiana (2 projects), and 
+Mississippi (2 projects). Among them, three 1640 MW gas power plants are submitted 
+by Entergy Louisiana, all in Richland Parish, as explained in the nonconfidential 
+summary as "MW range of need: 2,000 - 2,250 MW; LRZ region: 9; General description of 
+Load Need: The resource adequacy need is being driven by a hyperscale data center. 
+The Richland Parish generators are proposed to serve the outlined resource adequacy 
+need."
+138
+  
+ERAS queued capacity differs significantly among MISO states. Louisiana has about 
+7,500 MW queued, nearly all gas. South Dakota's queued capacity is entirely gas. 
+Wisconsin, Mississippi, and Texas also have queued projects mainly focused on gas. In 
+contrast, Illinois and Michigan, the only MISO states with retail electric choice, have 
+queued capacities that are 100% clean energy. 
+ 
+ 
+Figure    4: ERAS queued capacity by state 
+Data source: ERAS Interconnection Request, Midcontinent Independent System Operator, Inc.;   
+RPS& CES Targets and Demand, LBNL 
+ 
+  
+ 
+138
+ Midcontinent Independent System Operator, Inc., “ERAS Interconnection Requests.” 
+
+ 49 
+Discussion 
+Interconnection governance is shifting from managing a relatively uniform grid of 
+large, location-flexible fossil-fuel plants to managing a more diverse grid whose 
+resources vary by technology, location, and operational characteristics. Reliability 
+urgency, reflected in formal indicators, amplified by political attention, and driven by 
+a changing load regime, has increased pressure to accelerate interconnection. 
+Rationing policies such as RRI and ERAS respond to that pressure, but they introduce 
+contested and underexamined uncertainties. How these uncertainties are managed 
+matters for the clean energy industry and the broader energy transition, especially as 
+expedited queues may favor a large gas build-out and reinforce utility concentration. 
+Without addressing these uncertainties, the necessity and efficacy of such policies 
+remain doubtful, and their longer-term consequences for interconnection governance 
+remain unclear. 
+The analysis of the docket, interviews, and queue shows that ongoing contested 
+uncertainties and the exclusion of other uncertainties from formal discussion are 
+influenced by a short-term reliability view. This view has not yet adjusted to new 
+realities such as the rapid increase in hyperscaler load and the need to incorporate 
+clean resources for a decarbonized future. Additionally, it has not fully considered that 
+ensuring reliability might require more collective governance approaches. Based on 
+this insight, I propose three ideas for adaptive learning. 
+Rethink the scope of reliability. As an obligation of technocratic institutions, reliability 
+is not an absolute standard but a strategic planning tool that relies on forecasts of 
+future demand and supply to prepare the grid for the days ahead. Hyperscalers reach 
+out to utilities to show interest in interconnection; these expressions, even with policy 
+guardrails against speculation, shape utility demand forecasts, which are then 
+aggregated at regional and national levels to produce reliability metrics. The 
+"reliability need" that drives queue rationing, therefore, rests largely on forward-
+looking projections of data center interest. Data centers provide critical computing 
+infrastructure essential for technological innovation, but their unprecedented scale 
+and impact on the electricity industry should not be absorbed into a long-established 
+reliability concept without close examination. Adapting the reliability framework to 
+explicitly manage uncertainty is necessary for policymaking that fairly serves the 
+general welfare. 
+
+ 50 
+Embed reliability in broader values. Reliability can easily overshadow other public 
+values when it is treated as an overriding emergency claim. However, interviews 
+suggest that sustainability and reliability do not have to be in conflict. As one clean 
+energy advocate emphasized, no resource, including gas, is perfectly reliable. Under 
+climate-driven winter storms, dependence on any single resource can itself become a 
+reliability risk. Reliability is therefore not secured by favoring traditional resources, 
+but through system management that supports transmission, resource diversity, and 
+climate-aware planning. In a climate-stressed future, managing uncertainty requires 
+reframing reliability not as a value that overrides affordability and sustainability, but 
+as one that must be governed alongside them. 
+Build collective reliability governance. Technocratic governance relies on expertise, 
+but this case shows that its structure can also narrow the range of plausible solutions 
+and limit meaningful stakeholder engagement when reliability concerns become 
+urgent. Transparent and accessible processes are themselves a form of power. When 
+deliberation is compressed and highly technical, actors with institutional authority 
+and technical credibility tend to dominate. When the process is more visible and the 
+stakes are legible to a broader public, more balanced policymaking becomes more 
+possible. Managing uncertainty well requires a more collaborative posture, in which 
+coalitions across the policy subsystem have both voice and sustained engagement to 
+support adaptive learning. States could engage more actively in interconnection 
+policy, not only as recipients of RTO proposals but also as actors that carry clean 
+energy goals into the process. Upstream infrastructure policy may also benefit from 
+broader public visibility. Interconnection planning remains largely invisible to most 
+people, yet it shapes affordability, sustainability, and the distribution of costs among 
+ratepayers. Making these consequences more visible could help broaden how 
+interconnection is understood: not only as a technical bottleneck, but also as a 
+publicly consequential site of energy-transition governance. 
+ 
+ 
+
+ 51 
+Bibliography 
+“2024 in Review: Maintaining an Adequate Generation Supply | PJM Inside Lines.” 
+Accessed May 14, 2026. https://insidelines.pjm.com/2024-in-review-
+maintaining-an-adequate-generation-supply/?utm_source=chatgpt.com. 
+Alliant Energy Corporation. June Investor Meetings. (06/2025), n.d. 
+https://s201.q4cdn.com/991130938/files/doc_presentations/2025/Jun/10/107680
+0-Investor-Relations-BofA-NDR_Final.pdf. 
+“Ameren Missouri Unveils Plan to Enable Economic Growth, Boost Reliability and 
+Create Jobs in the State.” Accessed April 28, 2026. 
+https://www.amereninvestors.com/investors/financial-releases/financial-
+releases-details/2025/Ameren-Missouri-unveils-plan-to-enable-economic-
+growth-boost-reliability-and-create-jobs-in-the-state/default.aspx. 
+American Municipal Power, Inc. Comments of American Municipal Power, Inc. Docket 
+No.ER25-712. 2025. https://elibrary.ferc.gov/eLibrary/. 
+Ammann, Dana. Waiting Game: How the Interconnection Queue Threatens Renewable 
+Development in Pjm. Natural Resources Defense Council(NRDC), 2023. 
+https://doi.org/10.1163/9789004322714_cclc_2023-0158-0738. 
+“An Introductory Guide for Participation in PJM Processes | Federal Energy Regulatory 
+Commission.” Accessed March 21, 2026. https://www.ferc.gov/introductory-
+guide-participation-pjm-processes. 
+Armstrong, Les, Alexa Canaan, Christopher Knittel, Gilbert Metcalf, and Tim 
+Schittekatte. “Can Federal Grid Reforms Solve the Interconnection Problem?” 
+Science 385, no. 6704 (2024): 31–33. https://doi.org/10.1126/science.ado9254. 
+Behr, Peter. “Data Center Boom Sparks Sticker Shock for PJM Ratepayers.” E&E News 
+by POLITICO, October 3, 2025. https://www.eenews.net/articles/data-center-
+boom-sparks-sticker-shock-for-pjm-ratepayers/. 
+Bielak, Donnie. “Reliability Resource Initiative Additional Summaries.” PJM 
+Interconnection, February 2025. https://insidelines.pjm.com/pjm-chooses-51-
+generation-resource-projects-to-address-near-term-electricity-demand-
+growth/. 
+Bielak, Donnie. “Reliability Resource Initiative MRC Update.” November 7, 2024. 
+https://www.pjm.com/-/media/DotCom/committees-
+groups/committees/mrc/2024/20241107-special/item-04---reliability-resource-
+initiative---presentation.ashx. 
+Birkland, Thomas A. After Disaster : Agenda Setting, Public Policy, and Focusing Events. 
+In After Disaster : Agenda Setting, Public Policy, and Focusing Events. American 
+Governance and Public Policy. Georgetown University Press, 1997. 
+Braun, Mike. Support for Expedited Resource Addition Study (ERAS) Proposal. Docket 
+No.ER25-2454. 2025. https://elibrary.ferc.gov/eLibrary/. 
+
+ 52 
+Cairney, Paul. “Paul A. Sabatier, ‘An Advocacy Coalition Framework of Policy Change 
+and the Role of Policy-Oriented Learning Therein.’” In The Oxford Handbook of 
+Classics in Public Policy and Administration, edited by Martin Lodge, Edward C. 
+Page, and Steven J. Balla. Oxford University Press, 2015. 
+https://doi.org/10.1093/oxfordhb/9780199646135.013.24. 
+Chao, Hung-po, and Robert Wilson. “Coordination of Electricity Transmission and 
+Generation Investments.” Energy Economics 86 (February 2020): 104623. 
+https://doi.org/10.1016/j.eneco.2019.104623. 
+Clean Grid Alliance. Protest of Clean Grid Alliance. Docket No.ER25-2454-000. 2025. 
+Clean Wisconsin. Protest of Clean Wisconsin. Docket No.ER25-2454-000. 2025. 
+https://elibrary.ferc.gov/eLibrary/. 
+Coalition of Midwest Power Producers, Inc. Limited Protest of COMPP on Miso’s Refiled 
+Expeditated Resource Addition Study. Docket No.ER25-2454-000. 2025. 
+Cobb, Roger W., and Charles D. Elder. Participation in American Politics: The Dynamics 
+of Agenda-Building. Johns Hopkins University Press, 1983. 
+“Commissioner Phillips and Commissioner Rosner Concurrence Regarding PJM’s 
+Reliability Resource Initiative (RRI) Proposal (ER25-712-000) | Federal Energy 
+Regulatory Commission.” Accessed April 28, 2026. https://www.ferc.gov/news-
+events/news/commissioner-phillips-and-commissioner-rosner-concurrence-
+regarding-pjms. 
+“Commissioner See’s Concurrence on MISO’s Expedited Resource Addition Study 
+(ERAS) Filing, Docket No. ER25-1674 | Federal Energy Regulatory Commission.” 
+Accessed May 14, 2026. https://www.ferc.gov/news-
+events/news/commissioner-sees-concurrence-misos-expedited-resource-
+addition-study-eras-filing. 
+D. Larson. Utility Experiences and Trends Regarding Data Centers: 2024 Survey. n.d. 
+Accessed May 14, 2026. 
+https://www.epri.com/research/products/000000003002030643. 
+Dominion Energy Integrated Resource Plan Projects Historic Rate Increases for Virginia 
+Ratepayers While Subsidizing the World’s Wealthiest Companies - The Piedmont 
+Environmental Council. Data Centers. October 17, 2024. 
+https://www.pecva.org/region/loudoun/dominion-energy-integrated-
+resource-plan-projects-historic-rate-increases-for-virginia-ratepayers-while-
+subsidizing-the-worlds-wealthiest-companies/. 
+“Expedited Resource Adequacy Study (ERAS) Workshop - December 6, 2024.” Accessed 
+April 28, 2026. https://www.misoenergy.org/events/2024/expedited-resource-
+adequacy-study-eras-workshop---december-6-2024/. 
+Gergen, Michael J., George D. Cannon, and Shannon D. Torgerson. “A Modest Proposal: 
+A Market-Based Approach to Generation Interconnection Process Reform.” The 
+Electricity Journal 21, no. 9 (2008): 8–18. https://doi.org/10.1016/j.tej.2008.10.003. 
+
+ 53 
+Gorman, Will, Julie Mulvaney Kemp, Joseph Rand, et al. “Grid Connection Barriers to 
+Renewable Energy Deployment in the United States.” Joule 9, no. 2 (2025). 
+https://doi.org/10.1016/j.joule.2024.11.008. 
+Greer, Scott. “John W. Kingdon, Agendas, Alternatives, and Public Policies.” In The 
+Oxford Handbook of Classics in Public Policy and Administration, edited by 
+Martin Lodge, Edward C. Page, and Steven J. Balla. Oxford University Press, 
+2015. https://doi.org/10.1093/oxfordhb/9780199646135.013.18. 
+Herweg, Nicole, Christian Huß, and Reimut Zohlnhöfer. “Straightening the Three 
+Streams: Theorising Extensions of the Multiple Streams Framework.” European 
+Journal of Political Research 54, no. 3 (2015): 435–49. 108384589. 
+https://doi.org/10.1111/1475-6765.12089. 
+Illinois Office of the Governor and New Jersey Office of the Governor. “Letter Re: 
+Proposed Expedited Interconnection Track Tariff.” February 17, 2026. 
+https://www.pjm.com/-/media/DotCom/about-pjm/who-we-are/public-
+disclosures/2026/20260217-il-nj-governors-letter-re-the-expedited-
+interconnection-track-proposal.pdf. 
+Invenergy Renewables LLC, and Bottlebrush Storage LLC. Motion for Leave to Answer 
+and Answer of Invenergy Renewables LLC and Bottlebrush Storage LLC. Docket 
+No.ER25-712. 2025. 
+Johnston, Sarah, Yifei Liu, and Chenyu Yang. “An Empirical Analysis of the 
+Interconnection Queue.” Working Paper No. 31946. Working Paper Series. 
+National Bureau of Economic Research, December 2023. 
+https://doi.org/10.3386/w31946. 
+Jones, Bryan D. Politics and the Architecture of Choice : Bounded Rationality and 
+Governance. In Politics and the Architecture of Choice : Bounded Rationality and 
+Governance. University of Chicago Press, 2001. 
+Justia Dockets & Filings. “Solar Energy Industries Association, et al v. FERC.” Accessed 
+May 14, 2026. https://dockets.justia.com/docket/circuit-courts/ca3/25-2124. 
+Klass, Alexandra, Joshua Macey, Shelley Welton, and Hannah Wiseman. “Grid 
+Reliability through Clean Energy.” Stanford Law Review 74, no. 5 (2022): 969–
+1072. 
+Lawrence Berkeley National Laboratory. “Queued Up: Characteristics of Power Plants 
+Seeking Transmission Interconnection.” August 2025. 
+https://emp.lbl.gov/queues. 
+“Lawsuit Challenges FERC Approval of Central U.S. Grid Operator’s Fast-Track Energy 
+Plan.” November 18, 2025. https://www.nrdc.org/press-releases/lawsuit-
+challenges-ferc-approval-central-us-grid-operators-fast-track-energy-plan. 
+Lenhart, Stephanie, and Dalten Fox. “Participatory Democracy in Dynamic Contexts: A 
+Review of Regional Transmission Organization Governance in the United 
+States.” Energy Research & Social Science 83 (January 2022): 102345. 
+https://doi.org/10.1016/j.erss.2021.102345. 
+
+ 54 
+Manu Asthana. “Testimony of Manu Asthana.” U.S. HOUSE OF REPRESENTATIVES 
+COMMITTEE ON ENERGY & COMMERCE, SUBCOMMITTEE ON ENERGY, March 
+25, 2025. https://www.pjm.com/-/media/DotCom/library/reports-
+notices/testimony/2025/20250325-asthana-testimony-us-house-subcommittee-
+on-energy.pdf. 
+Michigan Public Service Commission. Notice of Intervention and Limited Protest of the 
+Michigan Public Service Commission. Docket No.ER25-2454. 2025. 
+Midamerican Energy Company. Resource Evaluation Study Report. 2024. 
+https://www.midamericanenergy.com/media/pdf/mec_resource_evaluation_st
+udy_11-1.pdf. 
+Midcontinent Independent System Operator, Inc. 2024 Reliability Imperative Report. 
+2025. 
+https://cdn.misoenergy.org/2024+Reliability+Imperative+report+Feb.+21+Final5
+04018.pdf. 
+Midcontinent Independent System Operator, Inc. “ERAS Interconnection Requests.” 
+March 2026. https://www.misoenergy.org/planning/resource-
+utilization/generator-interconnection/. 
+Midcontinent Independent System Operator, Inc. Motion for Leave to Answer and 
+Answer to the Comments and Protests. Docket No.ER25-2454-000. 2025. 
+Midcontinent Independent System Operator, Inc. Revisions to the Open Access 
+Transmission, Energy and Operating Reserve Tariff Expedited Resource Addition 
+Study Filing. Docket No.ER25-2454. Federal Energy Regulatory Commission, 
+2025. 
+MISO Independent Power Producers. Protest of the Miso Independent Power Producers. 
+Docket No.ER25-2454-000. 2025. 
+National Renewable Energy Laboratory. Explained: Fundamentals of Power Grid 
+Reliability and Clean Electricity. 2024. 
+Natural Resources Defense Council. Protest of Natural Resources Defense Council to 
+Reliability Resource Initiative. Docket No.ER25-712. 2025. 
+https://elibrary.ferc.gov/eLibrary/. 
+NextEra Energy Resources, LLC. Motion to Intervene and Protest of  NextEra Energy 
+Resources, LLC. Docket No.ER25-2454-000. 2025. 
+https://elibrary.ferc.gov/eLibrary/. 
+Nilson, Robi, Ben Hoen, and Joseph Rand. Survey of Utility-Scale Wind and Solar 
+Developers Report. January 18, 2024. 
+https://escholarship.org/uc/item/1w00h67w. 
+“NIPSCO to Supply 3 GW to Amazon Data Centers in Northern Indiana | Utility Dive.” 
+Accessed April 28, 2026. https://www.utilitydive.com/news/nisource-nipsco-
+amazon-data-centers-indiana/806396/. 
+
+ 55 
+Northern Indiana Public Service Company LLC. Northern Indiana Public Service 
+Company LLC  2024 Integrated Resource Plan. 2024. 
+https://www.in.gov/iurc/files/NIPSCO-2024-Integrated-Resource-Plan-
+Document.pdf. 
+“NTIA Seeks Comments on Supporting U.S. Data Center Growth | National 
+Telecommunications and Information Administration.” Accessed April 28, 2026. 
+https://www.ntia.gov/press-release/2024/ntia-seeks-comments-supporting-
+us-data-center-growth. 
+“Participation in Midcontinent Independent System Operator (MISO) Processes | 
+Federal Energy Regulatory Commission.” Accessed March 21, 2026. 
+https://www.ferc.gov/participation-midcontinent-independent-system-
+operator-miso-processes. 
+Patel, Kush, Kevin Steinberger, Andrew DeBenedictis, et al. Virginia Data Center Study. 
+n.d. 
+Phillips, Willie L., David Rosner, and Judy W. Chang. 190 FERC ¶ 61,084 UNITED 
+STATES OF AMERICA FEDERAL ENERGY REGULATORY COMMISSION. n.d. 
+“PJM Capacity Auction Procures Sufficient Resources To Meet RTO Reliability 
+Requirement | PJM Inside Lines.” Accessed April 11, 2026. 
+https://insidelines.pjm.com/pjm-capacity-auction-procures-sufficient-
+resources-to-meet-rto-reliability-requirement/. 
+“PJM Capacity Prices Set Another Record with 22% Jump | Utility Dive.” Accessed April 
+11, 2026. https://www.utilitydive.com/news/pjm-interconnection-capacity-
+auction-prices/753798/. 
+“PJM Details Resource Retirements, Replacements and Risks | PJM Inside Lines.” 
+Accessed April 21, 2026. https://insidelines.pjm.com/pjm-details-resource-
+retirements-replacements-and-risks/. 
+PJM Interconnection, L.L.C. Energy Transition in PJM: Resource Retirements, 
+Replacements & Risks. 2023. 
+PJM Interconnection, LLC. Motion for Leave to Answer and Answer of PJM 
+Interconnection, LLC. Docket No.ER25-712. 2025. 
+PJM Interconnection, L.L.C. Tariff Revisions for Interconnection Process Reform. 2022. 
+https://www.pjm.com/directory/etariff/FercDockets/6726/20220614-er22-2110-
+000.pdf. 
+PJM Interconnection, L.L.C. Tariff Revisions for Reliability Resource Initiative. Docket 
+No.ER25-712. 2024. e, libarry. 
+“PJM Introduces Interim Interconnection Process for Reliability | PJM Inside Lines.” 
+Accessed April 28, 2026. https://insidelines.pjm.com/pjm-introduces-interim-
+interconnection-process-for-reliability/?utm_source=chatgpt.com. 
+PJM Resource Adequacy Planning Department. 2023 Load Forecast Report. 2023. 
+
+ 56 
+PJM Resource Adequacy Planning Department. 2024 Load Forecast Report. PJM 
+Resource Adequacy Planning Department. 2024. 
+PJM Resource Adequacy Planning Department. 2025 Load Forecast Report. 2025. 
+PJM Resource Adequacy Planning Department. 2026 Load Forecast Report. 2026. 
+Public Interest Organizations, and Coalition of Midwest Power Producers, Inc. Protest 
+of Public Interest Organizations. Docket No.ER25-2454-000. 2025. 
+“Reliability Explainer | Federal Energy Regulatory Commission.” Accessed May 15, 
+2026. https://www.ferc.gov/reliability-explainer. 
+Rosner, David, and Lindsay S. See. 191 FERC ¶ 61,131 UNITED STATES OF AMERICA 
+FEDERAL ENERGY REGULATORY COMMISSION. n.d. 
+Rosner, David, Lindsay S. See, and Judy W. Chang. 192 FERC ¶ 61,064 UNITED STATES 
+OF AMERICA FEDERAL ENERGY REGULATORY COMMISSION. n.d. 
+RWE clean energy, LLC. Protest of RWE Clean Energy, LLC. Docket No.ER25-712. 2025. 
+Sabatier, Paul A. “An Advocacy Coalition Framework of Policy Change and the Role of 
+Policy-Oriented Learning Therein.” Policy Sciences 21, no. 2 (1988): 129–68. 
+https://doi.org/10.1007/BF00136406. 
+Sabatier, Paul A., and Hank C. Jenkins-Smith. Policy Change and Learning : An 
+Advocacy Coalition Approach. In Policy Change and Learning : An Advocacy 
+Coalition Approach. Theoretical Lenses on Public Policy. Westview Press, 1993. 
+Sabatier, Paul A., and Christopher M. Weible. Theories of the Policy Process. Third 
+edition. Westview Press, 2014. 828832. 
+https://research.ebsco.com/linkprocessor/plink?id=494ab2d3-9715-3585-8630-
+79547811ba17. 
+Sauma, Enzo E., and Shmuel S. Oren. “Proactive Planning and Valuation of 
+Transmission Investments in Restructured Electricity Markets.” Journal of 
+Regulatory Economics 30, no. 3 (2006): 261–90. https://doi.org/10.1007/s11149-
+006-9003-y. 
+Seel, Joachim, Rand Rand, and Will Gorman. Interconnection Cost Analysis in the PJM 
+Territory. Lawrence Berkeley National Laboratory, n.d. Accessed April 10, 2026. 
+https://emp.lbl.gov/publications/interconnection-cost-analysis-pjm. 
+Shehabi, Arman, Sarah Smith, Dale Sartor, et al. United States Data Center Energy 
+Usage Report. LBNL--1005775, 1372902. 2016. https://doi.org/10.2172/1372902. 
+Sierra Club and Appalachian Voices. Protest of Sierra Club and Appalachian Voices. 
+Docket No.ER25-712. 2025. 
+Stone, Laurie. “PJM’s Speed to Power Problem and How to Fix It.” RMI, November 4, 
+2025. https://rmi.org/pjms-speed-to-power-problem-and-how-to-fix-it/. 
+
+ 57 
+“Successful Interconnection Reforms, Other PJM Initiatives Seek To Maximize 
+Electricity Supplies | PJM Inside Lines.” Accessed March 24, 2026. 
+https://insidelines.pjm.com/connected/. 
+“Summaries | January 2026 Commission Meeting | Federal Energy Regulatory 
+Commission.” Accessed April 28, 2026. https://www.ferc.gov/news-
+events/news/summaries-january-2026-commission-meeting. 
+Sustainable FERC Project. Understanding Energy: PJM Explained. n.d. 
+https://www.nrdc.org/sites/default/files/media-uploads/pjm_explainer_-
+_sustainableferc.pdf. 
+the AES Corporation. Protest of AES Corporation. Docket No.ER25-712. 2025. 
+The American Council on Renewable Energy. Protest of the American Council on 
+Renewable Energy. Docket No.ER25-712. 2025. 
+https://acore.org/resources/acore-protest-of-pjm-reliability-resource-
+initiative/. 
+The Clean Energy Associations. Protest of The Clean Energy Associations. Docket 
+No.ER25-712. 2025. 
+the Independent Market Monitor. Comments of the Independent Market Monitor for 
+PJM. Docket No.ER25-712. 2025. 
+the Keystone Energy Efficiency Alliance, and the Energy Efficiency Alliance of New 
+Jersey. Motion to Intervene Out-of-Time and Comments on Behalf of  Keystone 
+Energy Efficiency Alliance and the Energy Efficiency  Alliance of New Jersey. 
+Docket No.ER25-712. 2025. 
+“The Largest Meta Data Center yet Brings Big Impact to Louisiana.” Meta Data Centers, 
+n.d. Accessed April 28, 2026. https://datacenters.atmeta.com/richland-parish-
+data-center/. 
+the Midcontinent Independent System Operator, and Inc. MISO Long-Term Load 
+Forecast Whitepaper. 2024. https://cdn.misoenergy.org/MISO%20Long-
+Term%20Load%20Forecast%20Whitepaper_December%202024667166.pdf. 
+the North American Electric Corporation. 2024 Long-Term Reliability Assessment. 2024. 
+https://www.nerc.com/globalassets/our-work/assessments/2024-
+ltra_corrected_july_2025.pdf. 
+Vincent, David Chernicoff, Matt. “The Future of Property Values and Power in 
+Virginia’s Loudoun County and ‘Data Center Alley.’” Data Center Frontier, 
+February 14, 2025. https://www.datacenterfrontier.com/site-
+selection/article/55266317/the-future-of-property-values-and-power-in-
+virginias-loudoun-county-and-data-center-alley. 
+Weible, Christopher M. “Expert-Based Information and Policy Subsystems: A Review 
+and Synthesis.” Policy Studies Journal 36, no. 4 (2008): 615–35. 
+https://doi.org/10.1111/j.1541-0072.2008.00287.x. 
+
+ 58 
+Zahariadis, Nikolaos. “Plato’s Receptacle: Deadlines, Ambiguity, and Temporal Sorting 
+in Public Policy.” In Zeit Der Politik, 1st ed. Nomos Verlagsgesellschaft mbH & 
+Co. KG, 2015. 
+Zahariadis, Nikolaos. “The Shield of Heracles: Multiple Streams and the Emotional 
+Endowment Effect.” European Journal of Political Research 54, no. 3 (2015): 466–
+81. 108384587. https://doi.org/10.1111/1475-6765.12072. 
+  
+
+ 59 
+Appendix 
+Appendix 1: Acronyms 
+Acronym Note 
+FERC Federal Energy Regulatory Commission 
+RTO Regional Transmission Organization 
+PJM PJM Interconnection 
+MISO Midcontinent Independent System Operator 
+NERC North American Electric Reliability Corporation 
+RRI Reliability Resource Initiative 
+ERAS Expedited Resource Addition Study 
+EIT Expedited Interconnection Track 
+DPP Definitive Planning Phase 
+GIA Generator Interconnection Agreement 
+IA Interconnection Agreement 
+IR Interconnection Request 
+IRP Integrated Resource Plan 
+RERRA Relevant Electric Retail Regulatory Authority 
+MTEP MISO Transmission Expansion Plan 
+OMS-MISO Organization of MISO States–MISO survey 
+IPP Independent Power Producer 
+ELCC Effective Load Carrying Capability 
+UCAP Unforced Capacity 
+COD Commercial Operation Date 
+LRZ Local Resource Zone 
+RPS Renewable Portfolio Standard 
+ 
+  
+
+ 60 
+Appendix 2: Interviews 
+ID Organization Type Expertise Engagement 
+Level 
+RTO  
+Interviewee #1 Environmental 
+Organization 
+Policy/Strategy Directly Involved MISO/PJM 
+Interviewee #2 Environmental 
+Organization 
+Legal Directly Involved PJM 
+Interviewee #3 Environmental 
+Organization 
+Policy/Strategy Directly Involved MISO 
+Interviewee #4 Environmental 
+Organization 
+Policy/Strategy Directly Involved PJM 
+Interviewee #5 Environmental 
+Organization 
+Legal Directly Involved MISO 
+Interviewee #6 Environmental 
+Organization 
+Legal Directly Involved MISO/PJM 
+Interviewee #7 Environmental 
+Organization 
+Legal Directly Involved PJM 
+Interviewee #8 Environmental 
+Organization 
+Policy/Strategy Actively Engaged MISO/PJM 
+Interviewee #9 Consumer Advocacy Policy/Strategy Actively Engaged MISO 
+Interviewee 
+#10 
+Trade Association Policy/Strategy General Expertise MISO/PJM 
+Interviewee 
+#11 
+Trade Association Technical Directly Involved MISO 
+Interviewee 
+#12 
+Trade Association Legal Actively Engaged PJM 
+Interviewee 
+#13 
+Trade Association Legal Directly Involved MISO 
+Interviewee 
+#14 
+Developer Policy/Strategy General Expertise MISO/PJM 
+Interviewee 
+#15 
+Developer Project 
+Development 
+General Expertise MISO/PJM 
+Interviewee 
+#16 
+Developer Policy/Strategy General Expertise MISO/PJM 
+Interviewee 
+#17 
+Independent Expert Technical Actively Engaged MISO 
+Interviewee 
+#18 
+Independent Expert Policy/Strategy General Expertise MISO/PJM 
+ 
+ 

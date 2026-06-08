@@ -70,7 +70,7 @@ export function ProfileTabs() {
             </p>
             <a
               href="/thesis.pdf"
-              download
+              download="Jiao_Zhao_Thesis.pdf"
               className="inline-flex items-center gap-3 bg-primary text-primary-foreground px-6 py-3 text-sm uppercase tracking-wider hover:bg-accent transition-colors"
             >
               <Download className="size-4" />
