@@ -10,6 +10,10 @@ const tabs = [
 
 type TabId = (typeof tabs)[number]['id']
 
+// basePath is applied to next/link and next/image automatically, but not to
+// plain anchor hrefs pointing at files in /public, so we prefix it manually.
+const basePath = process.env.NODE_ENV === 'production' ? '/sim-personal-web' : ''
+
 export function ProfileTabs() {
   const [active, setActive] = useState<TabId>('bio')
 
@@ -69,7 +73,7 @@ export function ProfileTabs() {
               creates more inclusive processes beyond technocratic institutions.
             </p>
             <a
-              href="/thesis.pdf"
+              href={`${basePath}/thesis.pdf`}
               download="Jiao_Zhao_Thesis.pdf"
               className="inline-flex items-center gap-3 bg-primary text-primary-foreground px-6 py-3 text-sm uppercase tracking-wider hover:bg-accent transition-colors"
             >
