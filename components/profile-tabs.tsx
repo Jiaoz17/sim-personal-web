@@ -38,15 +38,13 @@ export function ProfileTabs() {
         {active === 'bio' && (
           <div className="animate-in fade-in duration-300">
             <h1 className="text-3xl md:text-4xl font-light tracking-tight mb-8 text-balance">
-              Introduction
+              Bio
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed text-pretty">
-              [Bio placeholder] Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent fermentum, nisi vitae aliquet tincidunt, nunc nisl ultricies nunc,
-              vitae aliquet nisl nunc vitae nisl. Sed euismod, nisi vitae aliquet tincidunt,
-              nunc nisl ultricies nunc, vitae aliquet nisl nunc vitae nisl. Donec sit amet
-              urna eget mauris venenatis tincidunt. Curabitur in sapien vitae sem volutpat
-              consequat. Replace this paragraph with your own introduction.
+              Jiao Zhao is a recent MIT Master of City Planning graduate who focuses on grid
+              policy, infrastructure siting, and local energy and climate planning. Drawing on
+              data analytics, community engagement, and design thinking, she is passionate
+              about advancing an equitable energy transition.
             </p>
           </div>
         )}
@@ -54,12 +52,21 @@ export function ProfileTabs() {
         {active === 'thesis' && (
           <div className="animate-in fade-in duration-300">
             <h1 className="text-3xl md:text-4xl font-light tracking-tight mb-8 text-balance">
-              Thesis
+              Rationing the Interconnection Queue: Governing Uncertainty under Reliability Urgency
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed text-pretty mb-10">
-              [Thesis placeholder] A short description of the thesis goes here. Summarize the
-              core idea, scope, and contribution in a few sentences before inviting readers to
-              download the full document.
+              Queue-rationing policies such as PJM&apos;s RRI and MISO&apos;s ERAS prioritize
+              certain resources and customers rather than improving interconnection for all
+              market participants. Based on dockets, queue data, and interviews with clean
+              energy experts, Jiao Zhao&apos;s MIT thesis finds that uncertainties surrounding
+              these policies were either deferred to RTO expertise or excluded from the formal
+              FERC debate. Expedited tracks resulted in project mixes different from the
+              standard queue, with a concentration of gas, utility-led, and data center-driven
+              projects. The takeaway is that the limited, short-term reliability used to justify
+              rationing is inadequate for managing interconnection during the energy transition.
+              We need broader reliability governance&mdash;one that clarifies the public-interest
+              scope of reliability, embeds it alongside affordability and sustainability, and
+              creates more inclusive processes beyond technocratic institutions.
             </p>
             <a
               href="/thesis.pdf"

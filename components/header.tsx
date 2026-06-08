@@ -4,7 +4,7 @@ export function Header() {
       <div className="container mx-auto px-6 lg:px-12">
         <div className="flex items-center h-20">
           <div className="text-xl font-medium tracking-tight">
-            STUDIO
+            JIAO ZHAO
           </div>
         </div>
       </div>
